@@ -1,3 +1,12 @@
+const url = `https://striveschool-api.herokuapp.com/api/deezer/search?q=queen`
+
+fetch(url)
+  .then(response => response.json())  // Converte la risposta in JSON
+  .then(data => console.log(data))    // Stampa i dati nella console
+  .catch(error => console.error('Errore nella fetch:', error)); // Gestisce eventuali errori
+
+
+
 // Seleziona il bottone
 var btn = document.querySelector('.colapse-sidebr-btn');
 
