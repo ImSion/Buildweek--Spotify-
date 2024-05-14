@@ -121,13 +121,11 @@
 }
 .colapse-sidebr-btn .bi {
     display: none;
-    visibility: hidden;
     transition: opacity 0.5s linear 1s, visibility 0s linear 1s;
 }
 .colapse-sidebr-btn:hover .bi {
-    
+    color: rgb(30, 215, 96);
     opacity: 1;
-    visibility: visible;
     transition: opacity 0.5s linear, visibility 0s linear;
 }
 .colapse-sidebr-btn:hover {
