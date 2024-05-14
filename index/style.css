@@ -141,18 +141,11 @@ html,body{
 }
 #rightsidecollapse {
     transition: all 0.4s ease-in-out 0s;
-    width: 220px; /* Imposta la larghezza del contenitore della sidebar destra */
 }
 
 #main-content {
     background: linear-gradient(to bottom right, rgb(15, 15, 15) 20%, rgb(12, 12, 12) 40%);
-    width: 100%; /* Imposta la larghezza del contenuto principale al 100% */
-    height: 100vh;
-    overflow-y: auto; /* Mostra la barra di scorrimento verticale solo se necessario */
-    overflow-x: hidden; /* Nascondi la barra di scorrimento orizzontale */
 }
-
-
 
 @keyframes pulseColapseBtn {
     0%, 100% {
@@ -182,112 +175,3 @@ html,body{
     color: black;
     font-weight: bold;
 }
-=======
-
-/*CSS ALBUM*/
-
-#album-contents{
-    background: linear-gradient(to top, #000000, #00aeff);
-    width: 100%;
-    height: 100%;
-}
-
-#cover-album{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-}
-
-#cover-album img{
-    width: 300px;
-    height: 300px;
-    margin-left: 50px;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-}
-
-.album-texts{
-    width: 100%;
-    height: 200px;
-    margin-bottom: -80px;
-}
-
-.category{
-    color: white;
-    font-weight: 700;
-    font-size: medium;
-    margin-left: 40px;
-}
-
-#album-title{
-    color: white;
-    font-size: 100px;
-    font-weight: 700;
-    margin-left: 33px;
-    margin-top: -20px;
-}
-
-#album-artist{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    margin-top: 30px;
-}
-
-#album-artist img{
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    margin-left: 40px;
-}
-
-#artist, #album-data, #tracks{
-    color: white;
-    font-weight: 600;
-    font-size: large;
-    margin-top: 4px;
-    margin-left: 5px;
-}
-
-#album-artist h3:not(:last-child)::after {
-    content: "\00B7"; /* Carattere unicode per il punto */
-    margin-right: 5px;
-    color: white;
-    margin-left:10px;
-}
-
-/*USER BUTTON*/
-
-.buttons-user{
-    width: 100vw;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    padding-left: 40px;
-}
-
-.user-button{
-    width: 35px;
-    margin-left: 10px;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #121212;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #1AC33E;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0e6d23;
-}
-
-
->>>>>>> b46477c189c1b87c353122718cdb4cff76b76d49
