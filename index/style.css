@@ -150,3 +150,22 @@
         box-shadow: 0px 0px 10px rgb(30, 215, 96);
     }
 }
+
+.carousel-item {
+    transition: transform .3s ease-in-out;
+}
+
+.card-body {
+    color: white;
+    margin-left: 10px;
+}
+
+.btn.btn-success, .btn.btn-dark {
+    border-radius: 25px;
+    padding: 10px 35px;
+}
+
+.btn.btn-success {
+    color: black;
+    font-weight: bold;
+}
