@@ -118,6 +118,7 @@
     border-bottom-left-radius: 50px;
     padding: 0;
     transition: 0.4s ease-in-out;
+    animation: pulseColapseBtn 4s infinite;
 }
 .colapse-sidebr-btn .bi {
     display: none;
@@ -139,4 +140,13 @@
 
 #main-content {
     background: linear-gradient(to bottom right, rgb(15, 15, 15) 20%, rgb(12, 12, 12) 40%);
+}
+
+@keyframes pulseColapseBtn {
+    0%, 100% {
+        box-shadow: 0px 0px 1px rgb(30, 215, 96);
+    }
+    50% {
+        box-shadow: 0px 0px 10px rgb(30, 215, 96);
+    }
 }
