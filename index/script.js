@@ -18,7 +18,7 @@ fetch(url+artisti[index])
       }
       card.innerHTML = `
       <div class="d-flex">
-      <button><img class="album-img" src="${canzone.album.cover}" alt="${canzone.title}"></button>
+      <a href="/album/album.html?id=${canzone.album.name}"><img class="album-img" src="${canzone.album.cover}" alt="${canzone.title}"></a>
         <div class="card-body">
           <p>Album</p>
           <h1 class="song-title" >${canzone.title}</h1>
@@ -35,11 +35,11 @@ fetch(url+artisti[index])
       contenuto.appendChild(card);
 
     });
-  }
+  })
     
 
 
-    )    // Stampa i dati nella console
+  // Stampa i dati nella console
   .catch(error => console.error('Errore nella fetch:', error)); // Gestisce eventuali errori
 
   // gestisco il cambio testo del bottone che consente di collassare il carosello con gli annunci
@@ -62,9 +62,8 @@ fetch(url+artisti[index])
     collapseElement.addEventListener('hide.bs.collapse', function () {
         button.textContent = 'MOSTRA ANNUNCI';
     });
+
 });
-
-
 
 
 
