@@ -1,0 +1,730 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height:100vh;
+    overflow-x: hidden;
+}
+
+.container-fluid, .top.container-fluid {
+    padding:0;
+}
+
+.container-fluid {
+    height:100%;
+}
+
+#sb-left, #sb-right {
+    height:100%;
+    background-color: #000000;
+}
+
+.central-div {
+    background-color:#1F1F1F;
+    overflow-y: scroll;
+
+
+}
+
+
+/*Personalizzo la scrollbar del div .central-div*/
+.central-div::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Stile del thumb (parte mobile della scrollbar)*/
+.central-div::-webkit-scrollbar-thumb {
+    background-color: #535353;
+    border-radius: 2px;
+}
+
+/* Stile del thumb al passaggio del mouse */
+.central-div::-webkit-scrollbar-thumb:hover {
+    background-color: #828282;
+}
+
+/* Stile del track (parte non mobile della scrollbar)*/
+.central-div::-webkit-scrollbar-track {
+    background-color: #000000;
+    border-radius: 4px;
+} 
+
+/* Stile del track al passaggio del mouse */
+.central-div::-webkit-scrollbar-track:hover {
+    background-color: #505050;
+}  
+
+.upper-div {
+    height:300px;
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/022/095/009/small_2x/night-of-music-singer-on-concert-stage-generative-ai-tecnology-photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.artist-info {
+    height:50%;
+    position: relative;
+}
+
+.text {
+    color:white;
+    position: absolute;
+    left:3%;
+    top:42%;
+}
+
+.artist {
+    font-size:60px
+}
+
+hr {
+    color: gainsboro;
+}
+
+/* Nascondi la scrollbar predefinita */
+.scroll-div::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Stile del thumb (parte mobile della scrollbar) */
+.scroll-div::-webkit-scrollbar-thumb {
+    background-color: #535353;
+    border-radius: 2px;
+}
+
+/* Stile del thumb al passaggio del mouse */
+.scroll-div::-webkit-scrollbar-thumb:hover {
+    background-color: #828282;
+}
+
+/* Stile del track (parte non mobile della scrollbar) */
+.scroll-div::-webkit-scrollbar-track {
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+/* Stile del track al passaggio del mouse */
+.scroll-div::-webkit-scrollbar-track:hover {
+    background-color: #505050;
+}
+
+
+.play {
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #1ED760;
+    border:none;
+
+}
+
+.following {
+    padding:5px;
+    width:100px;
+    border:2px solid rgb(166, 166, 166);
+}
+
+.cuore {
+    width:20px;
+    height:20px;
+    background-color: #1ED760;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    top:47px;
+    left:60px;
+}
+
+.text-small {
+    font-size:10px;
+}
+
+.player {
+    width:100%;
+    background-color:#181818 ;
+    height:95px;
+    position: fixed;
+    bottom:0;
+    padding:15px;
+}
+
+.text-green {
+    color:#1ED760;
+    cursor: pointer;
+}
+
+.song-duration {
+    width:600px;
+    height:5px;
+    background-color:#5E5E5E ;
+}
+
+.expand {
+    width:100px;
+    height:3px;
+    background-color: whitesmoke;
+}
+
+.more-margin {
+    padding-left:98px;
+}
+
+.margin-bottom {
+    margin-bottom:120px;
+}
+
+.vertical-dots {
+    display:none;
+}
+
+
+.xs-yes {
+    display:none;
+}
+
+.bottom-xs {
+    display:none;
+}
+
+
+/*Stile elementi in hover*/
+
+.song-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.artist-name:hover {
+    cursor: pointer;
+    color:#1ED760 !important;
+}
+
+.album-cover:hover {
+    cursor: pointer;
+    opacity:0.8;
+}
+
+.scroll-div p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.album:hover {
+ cursor: pointer;
+ opacity: 0.8;
+}
+
+.song:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a.nav-link.text-white.p-0:hover {
+  color:gray !important;
+  cursor: pointer;
+}
+
+.play:hover {
+    cursor: pointer;
+    background-color: #1ed75fa1;
+}
+
+.following:hover {
+    border:2px solid #1ED760;
+}
+
+.dots:hover {
+    cursor: pointer;
+}
+
+.bi.bi-three-dots:hover {
+    color:white !important;
+}
+
+.control-buttons:hover {
+    cursor: pointer;
+}
+
+.start:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.end:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 576px) { 
+
+    body {
+        overflow-x: hidden;
+    }
+ 
+    #sb-left, #sb-right {
+        display:none !important;
+    }
+
+    .central-div .navbar {
+        display:none !important;
+    }
+
+    .verified-artist {
+        display:none;
+    }
+
+    .artist-info {
+        top:45%;
+    }
+
+    .listeners {
+        margin-top:50px;
+        color:rgb(137, 137, 137)
+    }
+
+    .xs-none {
+        display:none;
+    }
+
+    .popolari {
+        font-size:20px;
+    }
+
+    .popolari {
+        position: relative;
+        top:80px;
+        left:-10px;
+        margin-top:60px;
+        margin-bottom:70px;
+    }
+
+    .ti-piacciono {
+        display:none;
+    }
+
+    .col {
+        padding:5px;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .visualizza-altro {
+        display:none;
+    }
+
+    .liked-songs {
+        position:relative;
+        bottom:780px;
+        left:-50px;
+       
+    }
+
+    .duration {
+        display:none;
+    }
+
+    .vertical-dots {
+        display: inline;
+    }
+
+
+    .margin-top{
+        margin-top:80px;
+    }
+
+
+    .bottom-xs {
+        display:block;
+        position: fixed;
+        bottom:0;
+        width:100%;
+    }
+  
+
+    .down {
+        background-color: #121212;
+        width:100%;
+        height:100px;
+        color:white;
+        opacity:0.9;
+    }
+
+    .up {
+        background-color: #222222;
+        color:white;
+        width:100%;
+        height:70px;
+        box-shadow: 1px 1px 1px 1px #929292;
+    }
+  
+}
+
+
+@media (min-width:576px) and (max-width: 768px) { 
+    #sb-left, #sb-right {
+        display:none !important;
+    }
+
+    .central-div .navbar {
+        display:none !important;
+    }
+
+    .verified-artist {
+        display:none;
+    }
+
+    .artist-info {
+        top:45%;
+    }
+
+    .listeners {
+        margin-top:50px;
+        color:rgb(137, 137, 137)
+    }
+
+    .xs-none {
+        display:none;
+    }
+
+    .popolari {
+        font-size:20px;
+    }
+
+    .popolari {
+        position: relative;
+        top:80px;
+        left:-10px;
+        margin-top:80px;
+        margin-bottom:70px;
+    }
+
+    .ti-piacciono {
+        display:none;
+    }
+
+    .col {
+        padding:5px;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .visualizza-altro {
+        display:none;
+    }
+
+    .duration {
+        display:none;
+    }
+
+    
+    .vertical-dots {
+        display: inline;
+    }
+
+    
+    .album {
+        width:90px !important;
+    }
+
+    .song {
+        width:200px;
+        text-align: center;
+        font-size:18px;
+    }
+
+    .users {
+        width:200px;
+        font-size:16px;
+        color: grey;
+    }
+
+    .liked-songs {
+        position: relative;
+        bottom:1150px;
+        left:-45px;
+    }
+
+    .margin-top{
+        margin-top:80px;
+    }
+
+    .bottom-xs {
+        display:block;
+        position: fixed;
+        bottom:0;
+        width:100%;
+    }
+  
+
+    .down {
+        background-color: #121212;
+        width:100%;
+        height:100px;
+        color:white;
+        opacity:0.9;
+    }
+
+
+    .up {
+        background-color: #222222;
+        color:white;
+        width:100%;
+        height:70px;
+        box-shadow: 1px 1px 1px 1px #929292;
+    }
+  
+}
+ 
+
+
+
+@media (min-width:768px) and (max-width: 992px) { 
+    #sb-left, #sb-right {
+        display:none !important;
+    }
+
+    .central-div .navbar {
+        display:none !important;
+    }
+
+    .verified-artist {
+        display:none;
+    }
+
+    .artist-info {
+        top:45%;
+    }
+
+    .listeners {
+        margin-top:50px;
+        color:rgb(137, 137, 137)
+    }
+
+    .xs-none {
+        display:none;
+    }
+
+    .popolari {
+        font-size:20px;
+    }
+
+    .popolari {
+        position: relative;
+        top:80px;
+        left:-10px;
+        margin-top:70px;
+        margin-bottom:70px;
+    }
+
+    .ti-piacciono {
+        display:none;
+    }
+
+    .col {
+        padding:5px;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .visualizza-altro {
+        display:none;
+    }
+
+    .liked-songs {
+        position:relative;
+        bottom:1200px;
+        left:-50px;
+       
+    }
+
+    .duration {
+        display:none;
+    }
+
+    .vertical-dots {
+        display: inline;
+        cursor: pointer;
+    }
+
+    
+    .album {
+        width:100px !important;
+    }
+
+    .song {
+        width:350px;
+        text-align: center;
+        font-size:18px;
+    }
+
+    .users {
+        width:230px;
+        font-size:16px;
+        color: grey;
+    }
+
+    .margin-top {
+        margin-top:80px;
+    }
+
+    .bottom-xs {
+        display:block;
+        position: fixed;
+        bottom:0;
+        width:100%;
+    }
+  
+
+    .down {
+        background-color: #121212;
+        width:100%;
+        height:100px;
+        color:white;
+        opacity:0.9;
+    }
+
+    .up {
+        background-color: #222222;
+        color:white;
+        width:100%;
+        height:70px;
+        box-shadow: 1px 1px 1px 1px #929292;
+    }
+  
+}
+
+
+
+
+@media (min-width:992px) and (max-width:1200px ) {
+    #sb-left, #sb-right {
+        display:none !important;
+    }
+
+    .central-div .navbar {
+        display:none !important;
+    }
+
+    .verified-artist {
+        display:none;
+    }
+
+    .artist-info {
+        top:45%;
+    }
+
+    .listeners {
+        margin-top:50px;
+        color:rgb(137, 137, 137)
+    }
+
+    .xs-none {
+        display:none;
+    }
+
+    .popolari {
+        font-size:20px;
+    }
+
+    .popolari {
+        position: relative;
+        top:80px;
+        left:-10px;
+        margin-top:70px;
+        margin-bottom:70px;
+    }
+
+    .ti-piacciono {
+        display:none;
+    }
+
+    .col {
+        padding:5px;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .visualizza-altro {
+        display:none;
+    }
+
+    .liked-songs {
+        position:relative;
+        bottom:1220px;
+        left:-50px;
+       
+    }
+
+    .duration {
+        display:none;
+    }
+
+    .album {
+        width:100px !important;
+    }
+
+    .song {
+        width:400px;
+        text-align: center;
+        font-size:18px;
+    }
+
+    .users {
+        width:200px;
+        font-size:16px;
+        color: grey;
+    }
+    
+    .vertical-dots {
+        display: inline;
+        cursor: pointer;
+    }
+
+    .margin-top {
+        margin-top:80px;
+    }
+
+    .bottom-xs {
+        display:block;
+        position: fixed;
+        bottom:0;
+        width:100%;
+    }
+  
+
+    .down {
+        background-color: #121212;
+        width:100%;
+        height:100px;
+        color:white;
+        opacity:0.9;
+    }
+
+    .up {
+        background-color: #222222;
+        color:white;
+        width:100%;
+        height:70px;
+        box-shadow: 1px 1px 1px 1px #929292;
+    }
+  
+}
+
+

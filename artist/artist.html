@@ -1,5 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina artista</title>
+    <!--Collego foglio di stile bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--Collego il foglio di stile-->
+    <link rel="stylesheet" href="artist.css" />
+    <!--Collego icone di boostrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--Inserisco favicon-->
+    <link rel="icon" type="image/png" href="assets/icons8-spotify-32.png" />
+  </head>
+  <body>
+    <!--Creo un grande container che divido in due, la parte superiore con il contenuto principale e la parte inferiore con la nav fissa in basso-->
+    <div class="container-fluid">
+      <!--Qui dentro vado a creare tre spazi, due sidebar e un contenuto centrale-->
+      <div class="top container-fluid d-flex justify-content-between">
+        <!--Sidebar di sinistra-->
+        <div class="d-flex flex-column" style="width: 400px" id="sb-left">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+          >
+            <svg class="bi pe-none me-2" width="10" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4"><i class="bi bi-three-dots"></i> </span>
+          </a>
+          <hr />
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link text-white p-0 mb-3"
+                aria-current="page"
+              >
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#home"></use>
+                </svg>
+                <i class="bi bi-house-door me-2"></i> Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white p-0 mb-3">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                <i class="bi bi-search me-2"></i> Cerca
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white p-0">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-distribute-horizontal me-2"></i>La tua libreria
+              </a>
+            </li>
+            <li class="mt-5">
+              <a href="#" class="nav-link text-white p-0 mb-3">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-plus-square-fill me-2"></i>Crea playlist
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white p-0 mb-3">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-suit-heart-fill me-2"></i>Brani che ti piacciono
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white p-0">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-bookmark me-2"></i>I tuoi episodi
+              </a>
+            </li>
+          </ul>
+          <hr />
+          <div class="scroll-div text-secondary mx-3 overflow-y-scroll mt-2 fw-semibold ">
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist </p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+          </div>
+        </div>
+
+        <!--Contenuto centrale-->
+        <div class="container-fluid central-div">
+          <div class="upper-div d-flex flex-column">
+            <!--Qui mettiamo una nav-->
+            <nav class="navbar w-100">
+              <div class="controls d-flex gap-1 ms-2">
+                <button type="button" class="btn text-white">
+                  <a href="../index/index.html" class="text-white"><i class="bi bi-chevron-left fs-4"></i></a>
+                </button>
+                <button type="button" class="btn text-white border-0 " disabled >
+                  <i class="bi bi-chevron-right fs-4"></i>
+                </button>
+              </div>
+              <div class="profile-dropdown me-2">
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://image-tc.galaxy.tf/wijpeg-dun89jr9x9tua9cx4tg6tgba2/cover_wide.jpg?crop=0%2C0%2C1920%2C1080"
+                    alt=""
+                    width="32"
+                    height="32"
+                    class="rounded-circle me-2"
+                  />
+                  <strong>Lidia Nautilus...</strong>
+                </a>
+              </div>
+            </nav>
+            <!--Qui mettiamo un div con un'immagine di sfondo-->
+            <div class="artist-info">
+              <div class="text">
+                <h6 class="mb-2 verified-artist">
+                  <i class="bi bi-patch-check-fill text-primary me-2"></i
+                  >Artista verificato
+                </h6>
+                <h1 class="mb-4 artist">Yellowcard</h1>
+                <h6 class="listeners"> 3.433.158 ascoltatori mensili</h6>
+              </div>
+            </div>
+          </div>
+          <div class="inferior-div container">
+            <div class="row xs-yes d-flex">
+                <div class="col margin-top d-flex justify-content-between ">
+                  <div class="d-flex gap-5 ">
+                    <span class="text-white fs-3 ms-4">Seguiti</span>
+                    <span class="text-light fs-3"><i class="bi bi-three-dots-vertical"></i></span>
+                </div>
+                <div class="d-flex gap-5">
+                    <span class="text-green"><i class="bi bi-shuffle fs-3"></i></span>
+                    <span class="text-green"><i class="bi bi-play-circle-fill fs-3 me-3"></i></span>
+                </div>   
+                </div>
+               
+            </div>
+            <div class="row xs-none">
+              <div class="col d-flex align-items-center gap-4">
+                <div class="mt-4 ms-4 me-2">
+                  <button type="button" class="play">
+                    <i class="bi bi-play-fill fs-2"></i>
+                  </button>
+                </div>
+                <div class="mt-4 me-2">
+                  <button type="button" class="btn text-white following">
+                    FOLLOWING
+                  </button>
+                </div>
+                <div class="mt-4 dots">
+                  <i class="bi bi-three-dots text-secondary fs-3"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row text-white d-flex">
+              <div class="col mt-4 ms-4">
+                <h4 class="popolari">Popolari</h4>
+              </div>
+              <div class="col mt-4 ms-5">
+                <h4 class="ms-5 mb-5 ti-piacciono">Brani che ti piacciono</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between ">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 ">
+                      <div>1</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                          class="album"
+                        />
+                      </div>
+                      <div class="song ">Ocean Avenue</div>
+                    </div>
+                    <div class="mt-4 users">276.616.912</div>
+                    <div class="mt-4 duration ">3:18</div>
+                    <div class="vertical-dots mt-4 "><i class="bi bi-three-dots-vertical fs-3"></i></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 ">
+                      <div>2</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                          class="album"
+                        />
+                      </div>
+                      <div class="me-4 song ">Only One</div>
+                    </div>
+                    <div class="mt-4 users">98.839.244</div>
+                    <div class="mt-4 duration">4:17</div>
+                    <div class="vertical-dots mt-4"><i class="bi bi-three-dots-vertical fs-3"></i></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 ">
+                      <div>3</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                          class="album"
+                        />
+                      </div>
+                      <div class="me-4 song ">Breathing</div>
+                    </div>
+                    <div class="mt-4 users">52.308.097</div>
+                    <div class="mt-4 duration">3:38</div>
+                    <div class="vertical-dots mt-4"><i class="bi bi-three-dots-vertical fs-3"></i></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 ">
+                      <div>4</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                          class="album"
+                        />
+                      </div>
+                      <div class="me-4 song ">Lights and  <br>Sounds</div>
+                    </div>
+                    <div class="mt-4 users">48.278.178</div>
+                    <div class="mt-4 duration">3:18</div>
+                    <div class="vertical-dots mt-4"><i class="bi bi-three-dots-vertical fs-3"></i></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 ">
+                      <div>5</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                          class="album"
+                        />
+                      </div>
+                      <div class="me-4 song ">Way away</div>
+                    </div>
+                    <div class="mt-4 users">43.836.579</div>
+                    <div class="mt-4 duration">3:22</div>
+                    <div class="vertical-dots mt-4"><i class="bi bi-three-dots-vertical fs-3"></i></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 ">
+                      <div>6</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                          class="album"
+                        />
+                      </div>
+                      <div class="me-4 song ">Ocean Avenue</div>
+                    </div>
+                    <div class="mt-4 users">276.616..912</div>
+                    <div class="mt-4 duration">3:18</div>
+                    <div class="vertical-dots mt-4"><i class="bi bi-three-dots-vertical fs-3"></i></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 margin-bottom ">
+                      <div>7</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                          class="album"
+                        />
+                      </div>
+                      <div class="me-4 song ">Ocean Avenue</div>
+                    </div>
+                    <div class="mt-4 users">276.616..912</div>
+                    <div class="mt-4 duration">3:18</div>
+                    <div class="vertical-dots mt-4"><i class="bi bi-three-dots-vertical fs-3"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex liked-songs">
+                <div class="mt-1 ms-5 me-4 position-relative ">
+                    <img src="https://images.squarespace-cdn.com/content/v1/633ca5b0779be916e13bb32c/7bab7381-7f42-4658-b2cd-ef554e163217/Yellowcard-band-social-sharing-image.jpg" alt="cover" class="ms-4 rounded-5" width="55" height="55">
+                    <div class="cuore">
+                        <i class="bi bi-suit-heart-fill text-white"></i>
+                    </div>
+                </div>
+                <div class="mt-2 ">
+                    <h6 class="text-white">Hai messo mi piace a 11 brani</h6>
+                    <h6 class="text-secondary ">Di Yellowcard</h6>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col ms-4">
+                <h6 class="text-secondary visualizza-altro">VISUALIZZA ALTRO</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sidebar di sinistra che quando premi il pulsante x scompare -->
+
+        <div
+          class="d-flex flex-column flex-shrink-0 p-3"
+          style="width: 320px"
+          id="sb-right"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center justify-content-between gap-5 mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+          >
+            <span class="fs-6 ms-3">Attività amici</span>
+            <span><i class="bi bi-person-fill-add text-white ms-4"></i></span>
+            <span><i class="bi bi-x-lg text-white ms-4"></i></span>
+          </a>
+          <hr />
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white d-flex justify-content-between gap-3" aria-current="page">
+                <div>
+                    <img src="https://static.vecteezy.com/ti/foto-gratuito/t1/8452407-bellissimo-tramonto-sul-mare-con-albero-di-cocco-in-estate-foto.jpg" class="rounded-5" width="40" height="40">
+                </div>
+                <div>
+                    <h6>Charlie Hookman</h6>
+                    <h6 class="text-small">In Camera &middot Yumi Zouma </h6>
+                    <h6 class="text-small"><i class="bi bi-record-circle"></i> EP III</h6>
+                </div>
+                <div class="text-small">4 ore</div>
+              </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white d-flex justify-content-between gap-3" aria-current="page">
+                    <div>
+                        <img src="https://media-assets.wired.it/photos/615f2173a9c7c04ace55fa76/1:1/w_1280%2Cc_limit/054dbf56-f0f4-4aeb-b63c-2d584840e3aa.jpg" class="rounded-5" width="40" height="40">
+                    </div>
+                    <div>
+                        <h6>Charlie Hookman</h6>
+                        <h6 class="text-small">In Camera &middot Yumi Zouma </h6>
+                        <h6 class="text-small"><i class="bi bi-record-circle"></i> EP III</h6>
+                    </div>
+                    <div class="text-small">8 ore</div>
+                  </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white d-flex justify-content-between gap-3" aria-current="page">
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/In_the_photo_there_is_one_Perseid%2C_Milky_Way_and_Andromega_galaxy_and_light_pollution_on_the_horizon_-_Luhasoo_bog_in_Estonia.jpg/640px-In_the_photo_there_is_one_Perseid%2C_Milky_Way_and_Andromega_galaxy_and_light_pollution_on_the_horizon_-_Luhasoo_bog_in_Estonia.jpg" class="rounded-5" width="40" height="40">
+                    </div>
+                    <div>
+                        <h6>Charlie Hookman</h6>
+                        <h6 class="text-small">In Camera &middot Yumi Zouma </h6>
+                        <h6 class="text-small"><i class="bi bi-record-circle"></i> EP III</h6>
+                    </div>
+                    <div class="text-small">3 giorni</div>
+                  </a>
+            </li>
+      
+          </ul>
+          <hr />
+         
+        </div>
+      </div>
+      <div class="bottom-xs">
+        <div class="up d-flex justify-content-between  align-items-center gap-2">
+            <div class="w-50">
+             <marquee  behaviour="slide" scrollamount="3"  class="ms-5 fs-6">Ocean Avenue by Yellowcards</marquee>   
+            </div>
+            <div class="me-5">
+            <span class="me-4"><i class="bi bi-music-player-fill fs-4"></i></span>
+            <span class="me-4"><i class="bi bi-heart fs-4"></i></span>
+            <span><i class="bi bi-play-fill fs-4"></i></span>
+            </div>
+           
+        </div>
+        <div class="down d-flex gap-5 justify-content-center ">
+            <div class="d-flex justify-content-center flex-column align-items-center me-5">
+                <i class="bi bi-house-door fs-2"></i>
+                <h6>Home</h6>
+            </div>
+            <div class="d-flex justify-content-center align-items-center  flex-column me-5">
+                <i class="bi bi-search fs-2"></i>
+                <h6>Cerca</h6>
+            </div>
+            <div class="d-flex flex-column justify-content-center  align-items-center ">
+                <i class="bi bi-distribute-horizontal fs-2"></i>
+                <h6>La tua libreria</h6>
+            </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <!--Qui vado ad inserire una nav fissa in basso-->
+        <nav class="player d-flex justify-content-between pe-0 ">
+            <div class="d-flex gap-3 align-items-center w-25">
+                <div><img src="https://i1.sndcdn.com/artworks-uMDOyEPZ0SEN-0-t500x500.jpg" alt="album-cover" width="50" class="album-cover"></div>
+                <div>
+                    <h6 class="text-white song-title">Fat funny friends</h6>
+                    <h6 class="text-secondary artist-name">Maddie Zahm</h6>
+                </div>
+                <div><i class="bi bi-heart ms-4 fs-5"></i></div>
+            </div>
+            <div class="d-flex flex-column w-50  control-buttons">
+                <div class="d-flex justify-content-center ">
+                    <span class="mt-2 me-2"><i class="bi bi-shuffle fs-4 me-2 text-green"></i></span>
+                    <span><i class="bi bi-skip-start fs-2 me-2 text-light-emphasis "></i></span>
+                    <span><i class="bi bi-play-circle-fill fs-2  me-2  text-white"></i></span>
+                    <span><i class="bi bi-skip-end fs-2 me-2 text-light-emphasis"></i></span>
+                    <span class="mt-2 ms-2"><i class="bi bi-repeat fs-4 text-green"></i></span>
+                </div>
+                <div class="d-flex justify-content-center gap-4">
+                    <span class="text-white start">0:58</span>
+                    <span>
+                        <div class="song-duration mt-2"></div>
+                    </span>
+                    <span class="text-white end">3:20</span>
+                </div>
+            </div>
+            <div class="w-25 d-flex align-items-center gap-3 text-white  mt-2 more-margin">
+                <span><i class="bi bi-mic-fill text-light-emphasis "></i></span>
+                <span><i class="bi bi-distribute-vertical text-light-emphasis"></i></span>
+                <span><i class="bi bi-device-hdd-fill text-light-emphasis"></i></span>
+                <span><i class="bi bi-volume-up-fill text-light-emphasis"></i></span>
+                <span><div class="expand"></div></span>
+                <span><i class="bi bi-arrows-angle-expand text-light"></i></span>
+            </div>
+        </nav>
+      </div>
+    </div>
+
+    <!--Collego script di boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--Collego il mio script-->
+    <script src="artist.js"></script>
+  </body>
+</html>
+=======
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,3 +520,4 @@
     <script src="artist.js"></script>
 </body>
 </html>
+>>>>>>> 1038199d904f3d8d0331f21d3634e5c9867a9561
