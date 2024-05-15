@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina artista</title>
+    <!--Collego foglio di stile bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!--Collego il foglio di stile-->
+    <link rel="stylesheet" href="artist.css" />
+    <!--Collego icone di boostrap-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--Inserisco favicon-->
+    <link rel="icon" type="image/png" href="assets/icons8-spotify-32.png" />
+  </head>
+  <body>
+    <!--Creo un grande container che divido in due, la parte superiore con il contenuto principale e la parte inferiore con la nav fissa in basso-->
+    <div class="container-fluid">
+      <!--Qui dentro vado a creare tre spazi, due sidebar e un contenuto centrale-->
+      <div class="top container-fluid d-flex justify-content-between">
+        <!--Sidebar di sinistra-->
+        <div class="d-flex flex-column" style="width: 400px" id="sb-left">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+          >
+            <svg class="bi pe-none me-2" width="10" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4"><i class="bi bi-three-dots"></i> </span>
+          </a>
+          <hr />
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link text-white p-0 mb-3"
+                aria-current="page"
+              >
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#home"></use>
+                </svg>
+                <i class="bi bi-house-door me-2"></i> Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white p-0 mb-3">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#speedometer2"></use>
+                </svg>
+                <i class="bi bi-search me-2"></i> Cerca
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white p-0">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-distribute-horizontal me-2"></i>La tua libreria
+              </a>
+            </li>
+            <li class="mt-5">
+              <a href="#" class="nav-link text-white p-0 mb-3">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-plus-square-fill me-2"></i>Crea playlist
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white p-0 mb-3">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-suit-heart-fill me-2"></i>Brani che ti piacciono
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white p-0">
+                <svg class="bi pe-none me-2" width="2" height="16">
+                  <use xlink:href="#table"></use>
+                </svg>
+                <i class="bi bi-bookmark me-2"></i>I tuoi episodi
+              </a>
+            </li>
+          </ul>
+          <hr />
+          <div class="scroll-div text-secondary mx-3 overflow-y-scroll mt-2 fw-semibold ">
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist </p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+            <p><i class="bi bi-emoji-sunglasses me-2"></i>Summer 2010 playlist</p>
+          </div>
+        </div>
+
+        <!--Contenuto centrale-->
+        <div class="container-fluid central-div">
+          <div class="upper-div d-flex flex-column">
+            <!--Qui mettiamo una nav-->
+            <nav class="navbar w-100">
+              <div class="controls d-flex gap-1 ms-2">
+                <button type="button" class="btn text-white">
+                  <i class="bi bi-chevron-left fs-4"></i>
+                </button>
+                <button type="button" class="btn text-white">
+                  <i class="bi bi-chevron-right fs-4"></i>
+                </button>
+              </div>
+              <div class="profile-dropdown me-2">
+                <a
+                  href="#"
+                  class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://image-tc.galaxy.tf/wijpeg-dun89jr9x9tua9cx4tg6tgba2/cover_wide.jpg?crop=0%2C0%2C1920%2C1080"
+                    alt=""
+                    width="32"
+                    height="32"
+                    class="rounded-circle me-2"
+                  />
+                  <strong>Lidia Nautilus...</strong>
+                </a>
+              </div>
+            </nav>
+            <!--Qui mettiamo un div con un'immagine di sfondo-->
+            <div class="artist-info">
+              <div class="text">
+                <h6 class="mb-2">
+                  <i class="bi bi-patch-check-fill text-primary me-2"></i
+                  >Artista verificato
+                </h6>
+                <h1 class="mb-4 artist">Yellowcard</h1>
+                <h6>3.433.158 ascoltatori mensili</h6>
+              </div>
+            </div>
+          </div>
+          <div class="inferior-div container">
+            <div class="row">
+              <div class="col d-flex align-items-center gap-4">
+                <div class="mt-4 ms-4 me-2">
+                  <button type="button" class="play">
+                    <i class="bi bi-play-fill fs-2"></i>
+                  </button>
+                </div>
+                <div class="mt-4 me-2">
+                  <button type="button" class="btn text-white following">
+                    FOLLOWING
+                  </button>
+                </div>
+                <div class="mt-4">
+                  <i class="bi bi-three-dots text-secondary fs-3"></i>
+                </div>
+              </div>
+            </div>
+            <div class="row text-white">
+              <div class="col mt-4 ms-4">
+                <h4>Popolari</h4>
+              </div>
+              <div class="col mt-4 ms-5">
+                <h4 class="ms-5 mb-5">Brani che ti piacciono</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between ">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4">
+                      <div>1</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                        />
+                      </div>
+                      <div>Ocean Avenue</div>
+                    </div>
+                    <div class="mt-4">276.616..912</div>
+                    <div class="mt-4">3:18</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4">
+                      <div>2</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                        />
+                      </div>
+                      <div class="me-4">Only One</div>
+                    </div>
+                    <div class="mt-4">98.839.244</div>
+                    <div class="mt-4">4:17</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4">
+                      <div>3</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                        />
+                      </div>
+                      <div class="me-4">Breathing</div>
+                    </div>
+                    <div class="mt-4">52.308.097</div>
+                    <div class="mt-4">3:38</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4">
+                      <div>4</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                        />
+                      </div>
+                      <div class="me-4">Lights and  <br>Sounds</div>
+                    </div>
+                    <div class="mt-4">48.278.178</div>
+                    <div class="mt-4">3:18</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4">
+                      <div>5</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                        />
+                      </div>
+                      <div class="me-4">Way away</div>
+                    </div>
+                    <div class="mt-4">43.836.579</div>
+                    <div class="mt-4">3:22</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4">
+                      <div>6</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                        />
+                      </div>
+                      <div class="me-4">Ocean Avenue</div>
+                    </div>
+                    <div class="mt-4">276.616..912</div>
+                    <div class="mt-4">3:18</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col text-white d-flex justify-content-between">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 mb-5">
+                      <div>7</div>
+                      <div>
+                        <img
+                          src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
+                          alt="album-cover"
+                          style="width: 38px"
+                        />
+                      </div>
+                      <div class="me-4">Ocean Avenue</div>
+                    </div>
+                    <div class="mt-4">276.616..912</div>
+                    <div class="mt-4">3:18</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col d-flex">
+                <div class="mt-1 ms-5 me-4 position-relative ">
+                    <img src="https://images.squarespace-cdn.com/content/v1/633ca5b0779be916e13bb32c/7bab7381-7f42-4658-b2cd-ef554e163217/Yellowcard-band-social-sharing-image.jpg" alt="cover" class="ms-4 rounded-5" width="55" height="55">
+                    <div class="cuore">
+                        <i class="bi bi-suit-heart-fill text-white"></i>
+                    </div>
+                </div>
+                <div class="mt-2">
+                    <h6 class="text-white">Hai messo mi piace a 11 brani</h6>
+                    <h6 class="text-secondary ">Di Yellowcard</h6>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col ms-4">
+                <h6 class="text-secondary ">VISUALIZZA ALTRO</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Sidebar di sinistra che quando premi il pulsante x scompare -->
+
+        <div
+          class="d-flex flex-column flex-shrink-0 p-3"
+          style="width: 320px"
+          id="sb-right"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center justify-content-between gap-5 mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+          >
+            <span class="fs-6 ms-3">Attività amici</span>
+            <span><i class="bi bi-person-fill-add text-white ms-4"></i></span>
+            <span><i class="bi bi-x-lg text-white ms-4"></i></span>
+          </a>
+          <hr />
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-white d-flex justify-content-between gap-3" aria-current="page">
+                <div>
+                    <img src="https://static.vecteezy.com/ti/foto-gratuito/t1/8452407-bellissimo-tramonto-sul-mare-con-albero-di-cocco-in-estate-foto.jpg" class="rounded-5" width="40" height="40">
+                </div>
+                <div>
+                    <h6>Charlie Hookman</h6>
+                    <h6 class="text-small">In Camera &middot Yumi Zouma </h6>
+                    <h6 class="text-small"><i class="bi bi-record-circle"></i> EP III</h6>
+                </div>
+                <div class="text-small">4 ore</div>
+              </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white d-flex justify-content-between gap-3" aria-current="page">
+                    <div>
+                        <img src="https://media-assets.wired.it/photos/615f2173a9c7c04ace55fa76/1:1/w_1280%2Cc_limit/054dbf56-f0f4-4aeb-b63c-2d584840e3aa.jpg" class="rounded-5" width="40" height="40">
+                    </div>
+                    <div>
+                        <h6>Charlie Hookman</h6>
+                        <h6 class="text-small">In Camera &middot Yumi Zouma </h6>
+                        <h6 class="text-small"><i class="bi bi-record-circle"></i> EP III</h6>
+                    </div>
+                    <div class="text-small">8 ore</div>
+                  </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-white d-flex justify-content-between gap-3" aria-current="page">
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/In_the_photo_there_is_one_Perseid%2C_Milky_Way_and_Andromega_galaxy_and_light_pollution_on_the_horizon_-_Luhasoo_bog_in_Estonia.jpg/640px-In_the_photo_there_is_one_Perseid%2C_Milky_Way_and_Andromega_galaxy_and_light_pollution_on_the_horizon_-_Luhasoo_bog_in_Estonia.jpg" class="rounded-5" width="40" height="40">
+                    </div>
+                    <div>
+                        <h6>Charlie Hookman</h6>
+                        <h6 class="text-small">In Camera &middot Yumi Zouma </h6>
+                        <h6 class="text-small"><i class="bi bi-record-circle"></i> EP III</h6>
+                    </div>
+                    <div class="text-small">3 giorni</div>
+                  </a>
+            </li>
+      
+          </ul>
+          <hr />
+         
+        </div>
+      </div>
+      <div class="bottom">
+        <!--Qui vado ad inserire una nav fissa in basso-->
+      </div>
+    </div>
+
+    <!--Collego script di boostrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!--Collego il mio script-->
+    <script src="artist.js"></script>
+  </body>
+</html>
