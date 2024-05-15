@@ -8,7 +8,6 @@ fetch(url+artisti[index])
   .then(response => response.json())  // Converte la risposta in JSON
   .then(braniOttenuti => {let canzoni = braniOttenuti.data
     let i=0;
-    let active;
     canzoni.forEach(canzone => {
       i++;
      
