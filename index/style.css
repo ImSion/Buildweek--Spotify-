@@ -2,7 +2,7 @@
 
 /* stile sidebar sinistra */
 #leftsidebar {
-    width: 300px;
+    width: 400px;
     height: 100vh;
     background-color: black;
     z-index: 2000;
@@ -106,12 +106,35 @@
 }
 /* fine stile utility section */
 
+/* Stilizzo l'intera barra di scorrimento */
+::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  /* Stilizzo la traccia (parte della barra dove si muove il thumb) */
+  ::-webkit-scrollbar-track {
+    background: black; 
+  }
+  
+  /* Stilizzo il thumb (la parte della barra che si muove) */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 20px;
+  }
+  
+  /* Cambio il colore del thumb al passaggio del mouse */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  
 /* inizio stile sidebar destra e relativo colapse */
 .colapse-sidebar{
     background-color: rgb(12, 12, 12) ;
 }
 .colapse-sidebr-btn {
     background-color: rgb(40, 40, 40);
+    right: 0px;
     width: 10px;
     height: 100px;
     margin-top: 70px;
@@ -140,18 +163,41 @@
 }
 
 #main-content {
-    background: linear-gradient(to bottom right, rgb(15, 15, 15) 20%, rgb(12, 12, 12) 40%);
+    background: linear-gradient(190deg , rgb(40, 40, 40) 30%, rgb(12, 12, 12) 60%);
 }
 
-@keyframes pulseColapseBtn {
-    0%, 100% {
-        box-shadow: 0px 0px 1px rgb(30, 215, 96);
-    }
-    50% {
-        box-shadow: 0px 0px 10px rgb(30, 215, 96);
-    }
+/* stilizzo la card del brano nel carosello */
+.showcarousel-btn {
+    color: rgb(108, 117, 125);
+    right: 70px;
+    top: 70px;
+    background-color: rgb(50, 50, 50);
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 5px rgb(31, 31, 31);
+    z-index: 1000;
 }
 
+
+#artist-content {
+    width: 95%;
+    margin-left: 30px;
+    padding: 10px;
+    background: linear-gradient(13deg, black 30%, rgb(40,40,40)70%);
+    border-radius: 5px;
+}
+.album-img{
+    width: 250px;
+    height: 250px;
+    margin: 20px 10px;
+}
+.song-title {
+    font-size: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .carousel-item {
     transition: transform .3s ease-in-out;
@@ -163,12 +209,20 @@
 }
 
 .btn.btn-success, .btn.btn-dark {
+    height: 50px;
     border-radius: 25px;
     padding: 10px 35px;
 }
 
+.btn.btn-dark {
+    background-color: black;
+    border: 1px solid rgb(108, 117, 125);
+}
+
 .btn.btn-success {
     color: black;
+    background-color: rgb(30, 215, 96);
+    margin-right: 15px;
     font-weight: bold;
 }
 
@@ -181,4 +235,40 @@
     background-color: rgb(108, 117, 125);
     height: 3px;
     margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes pulseColapseBtn {
+    0%, 100% {
+        box-shadow: 0px 0px 1px rgb(30, 215, 96);
+    }
+    50% {
+        box-shadow: 0px 0px 10px rgb(30, 215, 96);
+    }
 }

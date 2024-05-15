@@ -1,5 +1,5 @@
 const url = `https://striveschool-api.herokuapp.com/api/deezer/search?q=`
-const contenuto = document.getElementById("carouselExampleSlidesOnly")
+const contenuto = document.getElementById("songCarousel")
 
 const artisti= ["eminem", "salmo", "metallica", "lazza", "oasis"]
 const index= Math.floor(Math.random() * (artisti.length - 0));
@@ -19,12 +19,12 @@ fetch(url+artisti[index])
       }
       card.innerHTML = `
       <div class="d-flex">
-          <img src="${canzone.album.cover}" alt="${canzone.title}" style="width: 250px;">
+          <img class="album-img" src="${canzone.album.cover}" alt="${canzone.title}">
         <div class="card-body">
           <p>Album</p>
-          <h1>${canzone.title}</h1>
-          <p>${canzone.artist.name}</p>
-          <p>Ascolta il nuovo singolo di ${canzone.artist.name}</p>
+          <h1 class="song-title" >${canzone.title}</h1>
+          <p class="mb-4">${canzone.artist.name}</p>
+          <p class="mb-4">Ascolta il nuovo singolo di ${canzone.artist.name}</p>
           <div>
             <button type="button" class="btn btn-success">Play</button>
             <button type="button" class="btn btn-dark">Salva</button>
@@ -48,19 +48,28 @@ fetch(url+artisti[index])
 
 
 
-// Seleziona il bottone
+// punto il bottone
 var btn = document.querySelector('.colapse-sidebr-btn');
 
-// Aggiungi un gestore per l'evento 'mouseenter'
+// Variabile per tenere traccia del timer
+var timer;
+
+// Aggiungo un gestore per l'evento 'mouseenter'
 btn.addEventListener('mouseenter', function() {
-  // Imposta un timer per cambiare il display dopo 1 secondo
-  setTimeout(function() {
+  // Cancello eventuali timer esistenti
+  clearTimeout(timer);
+
+  // Imposto un timer per cambiare il display dopo 400 millisecondi
+  timer = setTimeout(function() {
     btn.querySelector('.bi').style.display = 'block';
-  }, 800); // Ritardo di 800 millisecondi (1 secondo)
+  }, 400);
 });
 
-// Aggiungi un gestore per l'evento 'mouseleave'
+// Aggiungo un gestore per l'evento 'mouseleave'
 btn.addEventListener('mouseleave', function() {
-  // Rimuovi immediatamente l'icona quando il mouse lascia il bottone
+  // Cancello il timer quando il mouse lascia il bottone
+  clearTimeout(timer);
+
+  // Rimuovo immediatamente l'icona quando il mouse lascia il bottone
   btn.querySelector('.bi').style.display = 'none';
 });

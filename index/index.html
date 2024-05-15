@@ -60,11 +60,15 @@
       </div> 
 
       <!-- Contenuto centrale -->
-      <div id="main-content" class="container-fluid p-0 ">
+      <div id="main-content" class="container-fluid p-0 position-relative ">
 
         <!-- sezione utility main content (nav-buttons e user account ) -->
         <div class="utility-sect d-flex justify-content-between">
-
+          <p class="d-inline-flex gap-1">
+            <button class="btn showcarousel-btn position-absolute " type="button" data-bs-toggle="collapse" data-bs-target="#carouselcollapse" aria-expanded="false" aria-controls="carouselcollapse">
+              NASCONDI ANNUNCI
+            </button>
+          </p>
            <div class="utility-btns">
              <button class="btn nav-btns"> <i class="bi bi-chevron-left"></i> </button>
              <button class="btn nav-btns"> <i class="bi bi-chevron-right"></i> </button>
@@ -94,11 +98,14 @@
         
 
         <!--carosello-->
-        <div id="artist-content" class="d-none d-lg-flex">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+        <div id="artist-content" class="d-none d-lg-flex position-relative ">
+          
+          <div class="collapse" id="carouselcollapse">
+            <div id="songCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
 
-            </div>
+              </div>
+             </div>
           </div>
         </div>
 
@@ -108,8 +115,8 @@
 
       <!-- sidebar destra -->
 
-      <div class="colapse-sidebar">
-        <button class="btn colapse-sidebr-btn" type="button" data-bs-toggle="collapse" data-bs-target="#rightsidecollapse" aria-expanded="false" aria-controls="rightsidecollapse">
+      <div class="colapse-sidebar position-relative ">
+        <button class="btn colapse-sidebr-btn position-absolute " type="button" data-bs-toggle="collapse" data-bs-target="#rightsidecollapse" aria-expanded="false" aria-controls="rightsidecollapse">
           <i class="bi bi-person-lines-fill"></i>
         </button>
       </div>
@@ -169,7 +176,7 @@
           <i class="bi bi-play-fill d-md-none"></i>
         </div>
         <!--Parte sinistra-->
-        <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11" style="">
+        <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11">
           <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
 
           <!--Parte centrale-->
@@ -195,7 +202,6 @@
         </div>
       </div>
     </nav>
-    
     
     
 
