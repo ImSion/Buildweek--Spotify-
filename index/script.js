@@ -42,6 +42,7 @@ fetch(url+artisti[index])
     )    // Stampa i dati nella console
   .catch(error => console.error('Errore nella fetch:', error)); // Gestisce eventuali errori
 
+  // gestisco il cambio testo del bottone che consente di collassare il carosello con gli annunci
   document.addEventListener('DOMContentLoaded', function() {
     var collapseElement = document.getElementById('carouselcollapse');
     var button = document.getElementById('carouselToggle');
