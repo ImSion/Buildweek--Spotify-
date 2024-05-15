@@ -3,9 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CDN Icone bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/index/style.css">
     <title>Document</title>
 </head>
 <body>
+
+    <main class="d-flex justify-content-between">
+        <!-- sidebar sinistra (MainSBR) -->
+      <div id="leftsidebar" class="d-flex flex-column flex-shrink-0 p-3">
+        
+        <i class="bi bi-three-dots"></i>
+        <ul class="nav nav-pills flex-column justify-content-center first-ul-sbr">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-secondary " aria-current="page">
+                <i class="bi bi-house-door"></i> Home
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-secondary">
+                <i class="bi bi-search"></i>Cerca
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-secondary">
+            <i class="bi bi-distribute-horizontal"></i> La tua libreria
+            </a>
+          </li>
+
+          <li class="nav-item mt-5">
+              <a href="#" class="nav-link text-secondary" aria-current="page">
+                <i class="bi bi-plus-square-fill"></i>Crea Playlist
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-secondary d-flex ">
+               <div class="heart"><i class="bi bi-heart-fill"></i></div> Brani che ti piacciono
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-secondary d-flex ">
+                <div class="mybookmark"><i class="bi bi-bookmark-fill"></i></div>I tuoi episodi
+              </a>
+            </li>
+        </ul> 
+
+        <hr class="text-white ">
+
+        <div class="container things-container">
+            
+        </div>
+      </div> 
+
+      <!-- Contenuto centrale -->
+      <div id="main-content" class="container-fluid p-0 ">
+
+        <!-- sezione utility main content (nav-buttons e user account ) -->
+        <div class="utility-sect d-flex justify-content-between">
+
+           <div class="utility-btns">
+             <button class="btn nav-btns"> <i class="bi bi-chevron-left"></i> </button>
+             <button class="btn nav-btns"> <i class="bi bi-chevron-right"></i> </button>
+           </div>
+
+           <div class="myaccount">
+            <div id="accountsect" class="nav-item dropdown">
+              <a class="nav-link d-flex text-center align-items-center user-account dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="accountimg" src="/Assets/avatar-4.jpg" alt="account img">
+                <p class="m-0 text-white fw-bold ">Geralt di Rivia ...</p>
+              </a>
+              <ul id="accountdrop" class="dropdown-menu">
+                <li><a class="dropdown-item text-white" href="#"><img class="accountimg m-1 " src="/assets/avatar-4.jpg" alt=""> Geralt of Rivia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-pencil"></i>
+                  Manage Profile</a></li>
+                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-person-lines-fill"></i> Transfer profile</a></li>
+                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-person-fill"></i> Account</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-white" href="#">Sign Out <i class="bi bi-box-arrow-left"></i>
+                </a></li>
+              </ul>
+            </div>
+           </div>
+
+        </div>  
+        
+
+        <!--carosello-->
+        <div id="artist-content" class="d-none d-lg-flex">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <!-- sidebar destra -->
+
+      <div class="colapse-sidebar">
+        <button class="btn colapse-sidebr-btn" type="button" data-bs-toggle="collapse" data-bs-target="#rightsidecollapse" aria-expanded="false" aria-controls="rightsidecollapse">
+          <i class="bi bi-person-lines-fill"></i>
+        </button>
+      </div>
+        <div class="collapse collapse-horizontal" id="rightsidecollapse">
+
+        <div id="rightsidebar" class="d-flex flex-column flex-shrink-0 p-3">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="fs-4">Sidebar</span>
+          </a>
+          <hr>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link" aria-current="page">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                Orders
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                Products
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-link text-white">
+                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                Customers
+              </a>
+            </li>
+          </ul>
+       </div>
+      </div>
+
+    </main>
+       
+    <!--Bottom Nav Player-->
+
+    <nav class="navbar navbar-expand-lg bg-dark rounded" aria-label="Thirteenth navbar example">
+      <!--Parte visualizzata in mobile-->
+      <div class="container-fluid">
+        <p class="ms-5 d-md-none">song name</p>
+        <div class="d-md-none">
+          <i class="bi bi-speaker d-md-none"></i>
+          <i class="bi bi-heart"></i>
+          <i class="bi bi-play-fill d-md-none"></i>
+        </div>
+        <!--Parte sinistra-->
+        <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11" style="">
+          <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
+
+          <!--Parte centrale-->
+          <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+            <li class="nav-item justify-content-lg-center">
+              <div class="d-flex justify-content-lg-center gap-2 ">
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-play-circle-fill"></i>
+                <i class="bi bi-skip-end-fill"></i>
+              </div>
+              <div class="d-flex align-items-center">
+                0.00
+                <div id="minuts-div"></div>
+                3.50
+              </div>
+            </li>
+          </ul>
+
+          <!--parte destra-->
+          <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+
+          </div>
+        </div>
+      </div>
+    </nav>
     
+    
+    
+
+
+
+    
+
+    <!-- script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- script -->
+    <script src="script.js"></script>
 </body>
 </html>

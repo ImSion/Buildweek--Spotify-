@@ -1,0 +1,184 @@
+
+
+/* stile sidebar sinistra */
+#leftsidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    z-index: 2000;
+}
+#rightsidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: black;
+}
+.first-div-sbr {
+    border: 1px solid white;
+}
+.heart {
+    color: white;
+    background: linear-gradient(to bottom right, rgb(64, 19, 184), rgb(123, 143, 136));
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-right: 18px;
+    border-radius: 3px;
+}
+.mybookmark {
+    color: rgb(20, 150, 67);
+    background-color: rgb(0, 69, 55);
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-right: 18px;
+    border-radius: 3px;
+}
+.bi-three-dots {
+    font-size: 25px;
+    color: rgb(108, 117, 125);
+    margin-left: 14px;
+}
+.bi-house-door , .bi-search , .bi-distribute-horizontal, .bi-plus-square-fill   {
+    font-size: 25px;
+    margin-right: 18px;
+}
+.bi-house-door:hover:before {
+    content: "\f422";
+}
+/* fine stile sidebar sinistra */
+
+
+/* inizio stile utility section nel main */
+.utility-btns {
+    display: flex;
+    align-items: center;
+
+}
+.nav-btns {
+    color: rgb(108, 117, 125);
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.208) ;
+    margin-left: 14px;
+    transition: 0.3s ease-in-out;
+}
+.nav-btns:hover {
+    color: white;
+    background-color: black;
+}
+.utility-sect {
+    padding: 15px;
+}
+
+
+/* stile user-account */
+.user-account {
+    border: 4px solid black;
+    border-radius: 30px;
+    background-color: black;
+    
+    transition: 0.5s ease-in-out;
+}
+.user-account:hover{  
+    box-shadow: 0px 0px 5px rgb(30, 215, 96);
+}
+.accountimg {
+    width: 30px;
+    border-radius: 20px;
+}
+/* fine stile user account */
+
+
+/* stile dropdown user-account */
+#accountdrop {
+    background-color: rgb(0, 0, 0);
+}
+.dropdown-item:hover {
+    background-color: black;
+    text-shadow: 0px 0px 10px rgb(30, 215, 96);
+    transition: 0.4s ease-in-out;
+}
+/* fine stile utility section */
+
+/* inizio stile sidebar destra e relativo colapse */
+.colapse-sidebar{
+    background-color: rgb(12, 12, 12) ;
+}
+.colapse-sidebr-btn {
+    background-color: rgb(40, 40, 40);
+    width: 10px;
+    height: 100px;
+    margin-top: 70px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding: 0;
+    transition: 0.4s ease-in-out;
+    animation: pulseColapseBtn 4s infinite;
+}
+.colapse-sidebr-btn .bi {
+    display: none;
+    transition: opacity 0.5s linear 1s, visibility 0s linear 1s;
+}
+.colapse-sidebr-btn:hover .bi {
+    color: rgb(30, 215, 96);
+    opacity: 1;
+    transition: opacity 0.5s linear, visibility 0s linear;
+}
+.colapse-sidebr-btn:hover {
+    width: 20px;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 0px 0px 5px rgb(30, 215, 96);
+}
+#rightsidecollapse {
+    transition: all 0.4s ease-in-out 0s;
+}
+
+#main-content {
+    background: linear-gradient(to bottom right, rgb(15, 15, 15) 20%, rgb(12, 12, 12) 40%);
+}
+
+@keyframes pulseColapseBtn {
+    0%, 100% {
+        box-shadow: 0px 0px 1px rgb(30, 215, 96);
+    }
+    50% {
+        box-shadow: 0px 0px 10px rgb(30, 215, 96);
+    }
+}
+
+
+.carousel-item {
+    transition: transform .3s ease-in-out;
+}
+
+.card-body {
+    color: white;
+    margin-left: 10px;
+}
+
+.btn.btn-success, .btn.btn-dark {
+    border-radius: 25px;
+    padding: 10px 35px;
+}
+
+.btn.btn-success {
+    color: black;
+    font-weight: bold;
+}
+
+.container-fluid {
+    color: white;
+}
+
+#minuts-div {
+    width: 500px;
+    background-color: rgb(108, 117, 125);
+    height: 3px;
+    margin: 5px;
+}
