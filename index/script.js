@@ -43,6 +43,26 @@ fetch(url+artisti[index])
     )    // Stampa i dati nella console
   .catch(error => console.error('Errore nella fetch:', error)); // Gestisce eventuali errori
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var collapseElement = document.getElementById('carouselcollapse');
+    var button = document.getElementById('carouselToggle');
+
+    // Aggiorno il testo in base allo stato iniziale del collapse
+    if (collapseElement.classList.contains('show')) {
+        button.textContent = 'NASCONDI ANNUNCI';
+    } else {
+        button.textContent = 'MOSTRA ANNUNCI';
+    }
+
+    // Ascoltatore per il cambiamento di stato del collapse
+    collapseElement.addEventListener('show.bs.collapse', function () {
+        button.textContent = 'NASCONDI ANNUNCI';
+    });
+
+    collapseElement.addEventListener('hide.bs.collapse', function () {
+        button.textContent = 'MOSTRA ANNUNCI';
+    });
+});
 
 
 
