@@ -238,6 +238,12 @@
 }
 
 
+#volume{
+    width: 100px;
+    background-color: rgb(108, 117, 125);
+    height: 3px;
+    margin: 5px;
+}
 
 
 
