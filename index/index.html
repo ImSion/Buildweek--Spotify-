@@ -108,7 +108,7 @@
              </div>
           </div>
         </div>
-
+        
         <div class="playlists-section mt-4">
           <h3 class="mb-4 fw-bold ">Buonasera</h3>
           <div class="playlists d-flex justify-content-between gap-3 flex-wrap ">
@@ -200,6 +200,72 @@
        </div>
       </div>
 
+      <!--ALBUM-->
+
+      <div id="album-maincontent" class="container-fluid p-0 d-none">
+
+        <!-- sezione utility main content (nav-buttons e user account ) -->
+        <div class="utility-sect d-flex justify-content-between">
+
+           <div class="utility-btns">
+             <button class="btn nav-btns"> <i class="bi bi-chevron-left"></i> </button>
+             <button class="btn nav-btns"> <i class="bi bi-chevron-right"></i> </button>
+           </div>
+
+           <div class="myaccount">
+            <div id="accountsect" class="nav-item dropdown">
+              <a class="nav-link d-flex text-center align-items-center user-account dropdown-toggle text-white " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img class="accountimg" src="/Assets/avatar-4.jpg" alt="account img">
+                <p class="m-0 text-white fw-bold ">Geralt di Rivia ...</p>
+              </a>
+              <ul id="accountdrop" class="dropdown-menu">
+                <li><a class="dropdown-item text-white" href="#"><img class="accountimg m-1 " src="/assets/avatar-4.jpg" alt=""> Geralt of Rivia</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-pencil"></i>
+                  Manage Profile</a></li>
+                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-person-lines-fill"></i> Transfer profile</a></li>
+                <li><a class="dropdown-item text-white" href="#"><i class="bi bi-person-fill"></i> Account</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-white" href="#">Sign Out <i class="bi bi-box-arrow-left"></i>
+                </a></li>
+              </ul>
+            </div>
+           </div>
+
+        </div>  
+        
+        <div id="album-contents">
+            <div id="cover-album">
+                <img class="album-img" src="/album/dipuc.png" alt="">
+                <div class="album-texts">
+                    <h1 class="category">ALBUM</h1>
+                    <h1 id="album-title">La Gioventu</h1>
+                    <div id="album-artist">
+                        <img class="album-img" src="dipuc.png" alt="">
+                        <h3 id="artist">I pinguini tattici</h3>
+                        <h3 id="album-data">2017</h3>
+                        <h3 id="tracks">12 brani</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="titles">
+                <div class="buttons-user">
+                    <svg height="75" width="75">
+                        <circle cx="35" cy="35" r="30" fill="#1AC33E" />
+                        <polygon points="27,20 27,50 50,35" style="fill:black;" />
+                    </svg>
+                    <img class="user-button" src="assets/heart.svg" alt="">
+                    <img class="user-button" src="assets/arrow-down-circle.svg" alt="">
+                    <img class="user-button" src="assets/more-horizontal.svg" alt="">
+                </div> 
+                            
+            </div>
+        </div>
+
+
+
+      </div>
+
     </main>
        
     <!--Bottom Nav Player-->
@@ -246,6 +312,7 @@
         </div>
       </div>
     </nav>
+
     
     
     

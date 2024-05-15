@@ -18,7 +18,7 @@ fetch(url+artisti[index])
       }
       card.innerHTML = `
       <div class="d-flex">
-          <img class="album-img" src="${canzone.album.cover}" alt="${canzone.title}">
+      <button><img class="album-img" src="${canzone.album.cover}" alt="${canzone.title}"></button>
         <div class="card-body">
           <p>Album</p>
           <h1 class="song-title" >${canzone.title}</h1>
