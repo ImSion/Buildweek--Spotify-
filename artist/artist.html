@@ -174,7 +174,7 @@
                     FOLLOWING
                   </button>
                 </div>
-                <div class="mt-4">
+                <div class="mt-4 dots">
                   <i class="bi bi-three-dots text-secondary fs-3"></i>
                 </div>
               </div>
@@ -198,9 +198,10 @@
                           src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
                           alt="album-cover"
                           style="width: 38px"
+                          class="album"
                         />
                       </div>
-                      <div>Ocean Avenue</div>
+                      <div class="song">Ocean Avenue</div>
                     </div>
                     <div class="mt-4">276.616..912</div>
                     <div class="mt-4">3:18</div>
@@ -215,9 +216,10 @@
                           src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
                           alt="album-cover"
                           style="width: 38px"
+                          class="album"
                         />
                       </div>
-                      <div class="me-4">Only One</div>
+                      <div class="me-4 song">Only One</div>
                     </div>
                     <div class="mt-4">98.839.244</div>
                     <div class="mt-4">4:17</div>
@@ -232,9 +234,10 @@
                           src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
                           alt="album-cover"
                           style="width: 38px"
+                          class="album"
                         />
                       </div>
-                      <div class="me-4">Breathing</div>
+                      <div class="me-4 song">Breathing</div>
                     </div>
                     <div class="mt-4">52.308.097</div>
                     <div class="mt-4">3:38</div>
@@ -249,9 +252,10 @@
                           src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
                           alt="album-cover"
                           style="width: 38px"
+                          class="album"
                         />
                       </div>
-                      <div class="me-4">Lights and  <br>Sounds</div>
+                      <div class="me-4 song">Lights and  <br>Sounds</div>
                     </div>
                     <div class="mt-4">48.278.178</div>
                     <div class="mt-4">3:18</div>
@@ -266,9 +270,10 @@
                           src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
                           alt="album-cover"
                           style="width: 38px"
+                          class="album"
                         />
                       </div>
-                      <div class="me-4">Way away</div>
+                      <div class="me-4 song">Way away</div>
                     </div>
                     <div class="mt-4">43.836.579</div>
                     <div class="mt-4">3:22</div>
@@ -283,9 +288,10 @@
                           src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
                           alt="album-cover"
                           style="width: 38px"
+                          class="album"
                         />
                       </div>
-                      <div class="me-4">Ocean Avenue</div>
+                      <div class="me-4 song">Ocean Avenue</div>
                     </div>
                     <div class="mt-4">276.616..912</div>
                     <div class="mt-4">3:18</div>
@@ -293,16 +299,17 @@
                 </div>
                 <div class="row">
                   <div class="col text-white d-flex justify-content-between">
-                    <div class="d-flex text-white gap-3 ms-4 mt-4 mb-5">
+                    <div class="d-flex text-white gap-3 ms-4 mt-4 margin-bottom">
                       <div>7</div>
                       <div>
                         <img
                           src="https://m.media-amazon.com/images/I/41iu1zvxB2L._UF1000,1000_QL80_.jpg"
                           alt="album-cover"
                           style="width: 38px"
+                          class="album"
                         />
                       </div>
-                      <div class="me-4">Ocean Avenue</div>
+                      <div class="me-4 song">Ocean Avenue</div>
                     </div>
                     <div class="mt-4">276.616..912</div>
                     <div class="mt-4">3:18</div>
@@ -393,6 +400,40 @@
       </div>
       <div class="bottom">
         <!--Qui vado ad inserire una nav fissa in basso-->
+        <nav class="player d-flex justify-content-between pe-0 ">
+            <div class="d-flex gap-3 align-items-center w-25">
+                <div><img src="https://i1.sndcdn.com/artworks-uMDOyEPZ0SEN-0-t500x500.jpg" alt="album-cover" width="50" class="album-cover"></div>
+                <div>
+                    <h6 class="text-white song-title">Fat funny friends</h6>
+                    <h6 class="text-secondary artist-name">Maddie Zahm</h6>
+                </div>
+                <div><i class="bi bi-heart ms-4 fs-5"></i></div>
+            </div>
+            <div class="d-flex flex-column w-50  control-buttons">
+                <div class="d-flex justify-content-center ">
+                    <span class="mt-2 me-2"><i class="bi bi-shuffle fs-4 me-2 text-green"></i></span>
+                    <span><i class="bi bi-skip-start fs-2 me-2 text-light-emphasis "></i></span>
+                    <span><i class="bi bi-play-circle-fill fs-2  me-2  text-white"></i></span>
+                    <span><i class="bi bi-skip-end fs-2 me-2 text-light-emphasis"></i></span>
+                    <span class="mt-2 ms-2"><i class="bi bi-repeat fs-4 text-green"></i></span>
+                </div>
+                <div class="d-flex justify-content-center gap-4">
+                    <span class="text-white start">0:58</span>
+                    <span>
+                        <div class="song-duration mt-2"></div>
+                    </span>
+                    <span class="text-white end">3:20</span>
+                </div>
+            </div>
+            <div class="w-25 d-flex align-items-center gap-3 text-white  mt-2 more-margin">
+                <span><i class="bi bi-mic-fill text-light-emphasis "></i></span>
+                <span><i class="bi bi-distribute-vertical text-light-emphasis"></i></span>
+                <span><i class="bi bi-device-hdd-fill text-light-emphasis"></i></span>
+                <span><i class="bi bi-volume-up-fill text-light-emphasis"></i></span>
+                <span><div class="expand"></div></span>
+                <span><i class="bi bi-arrows-angle-expand text-light"></i></span>
+            </div>
+        </nav>
       </div>
     </div>
 

@@ -144,3 +144,104 @@ hr {
 .text-small {
     font-size:10px;
 }
+
+.player {
+    width:100%;
+    background-color:#181818 ;
+    height:95px;
+    position: fixed;
+    bottom:0;
+    padding:15px;
+}
+
+.text-green {
+    color:#1ED760
+}
+
+.song-duration {
+    width:600px;
+    height:5px;
+    background-color:#5E5E5E ;
+}
+
+.expand {
+    width:100px;
+    height:3px;
+    background-color: whitesmoke;
+}
+
+.more-margin {
+    padding-left:98px;
+}
+
+.margin-bottom {
+    margin-bottom:120px;
+}
+
+/*Stile elementi in hover*/
+
+.song-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.artist-name:hover {
+    cursor: pointer;
+    color:#1ED760 !important;
+}
+
+.album-cover:hover {
+    cursor: pointer;
+    opacity:0.8;
+}
+
+.scroll-div p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.album:hover {
+ cursor: pointer;
+ opacity: 0.8;
+}
+
+.song:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+a.nav-link.text-white.p-0:hover {
+  color:gray !important;
+  cursor: pointer;
+}
+
+.play:hover {
+    cursor: pointer;
+    background-color: #1ed75fa1;
+}
+
+.following:hover {
+    border:2px solid #1ED760;
+}
+
+.dots:hover {
+    cursor: pointer;
+}
+
+.bi.bi-three-dots:hover {
+    color:white !important;
+}
+
+.control-buttons:hover {
+    cursor: pointer;
+}
+
+.start:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.end:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
