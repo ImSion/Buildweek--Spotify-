@@ -1,3 +1,9 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* stile sidebar sinistra */
 #leftsidebar {
     width: 400px;
@@ -295,19 +301,6 @@
     font-size: 17px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-fluid {
     color: white;
 }
@@ -364,36 +357,37 @@
 }
 
 
-
-
-
-
-
 /* CSS pagina Album */
 #album-main{
     background: linear-gradient(to bottom, rgb(254,220 ,89) 20%, rgb(12, 12, 12) 70% );
 }
+
 .album-img1 {
-    width: 28px;
-    border-radius: 50%;
+    width: 40px;
+    border-radius: 20px;
 }
+
 .album-texts{
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 25px;
     color: rgb(255, 255, 255);
-
-
 }
+
 #album-title{
    font-size: 70px;
 }
+
+
+
 #icone-brani{
     color: white;
     font-size: 30px;
     align-items: center;
     gap: 15px;
+    background-color: rgba(87, 87, 87, 0.2);
+    padding-left: 40px;
 }
 
 #icone-brani .bi.bi-play-circle-fill{
@@ -401,19 +395,34 @@
     font-size: 60px;
 
 }
+
 .top-canzoni{
     color: white;
     border-bottom: 1px solid rgb(108, 117, 125); /* da verificare il colore del bordo*/
+    align-items: center;
 }
 
+#lista-canzoni{
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: rgba(87, 87, 87, 0.2);
+}
 
+#rowSong{
+    width: 100%;
+}
 
+#rowSong img{
+    margin-left: auto;
+    margin-right: 40px;
+}
 
-
-
-
-
-
+@media screen and (max-width: 1200px) { /* Aggiunto media query per le dimensioni md di Bootstrap */
+    #riprod, #hashtag, #clock {
+      display: none;
+    }
+  }
+  
 
 @media screen and (max-width: 1900px){
     .playlist {
@@ -440,9 +449,6 @@
     }
 }
 
-
-
-
 @keyframes pulseColapseBtn {
     0%, 100% {
         box-shadow: 0px 0px 1px rgb(30, 215, 96);
@@ -451,7 +457,4 @@
         box-shadow: 0px 0px 10px rgb(30, 215, 96);
     }
 }
-
-
-
 
