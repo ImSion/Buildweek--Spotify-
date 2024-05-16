@@ -308,6 +308,9 @@
 
 
 
+.container-fluid {
+    color: white;
+}
 
 
 /*Inizio stile navbar bottom*/
@@ -356,12 +359,6 @@
     height: 3px;
     margin: 5px;
 }
-
-
-.artist-name {
-    cursor: pointer;
-}
-
 .artist-name {
     cursor: pointer;
 }
