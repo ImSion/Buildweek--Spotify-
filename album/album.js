@@ -22,7 +22,7 @@ fetch(url + albumId)
         </div>
     </div>
 </div>` 
-
+// TO DO FOR EACH
 let brano = document.createElement("div");
 brano.classList("top-canzoni","d-flex","justify-content-between");
 brano.innerHTML=`
