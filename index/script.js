@@ -22,7 +22,7 @@ fetch(url+artisti[index])
         <div class="card-body">
           <p>Album</p>
           <h1 class="song-title" >${canzone.title}</h1>
-          <p class="mb-4">${canzone.artist.name}</p>
+          <p class="mb-4 artist-name" >${canzone.artist.name}</p>
           <p class="mb-4">Ascolta il nuovo singolo di ${canzone.artist.name}</p>
           <div>
             <button type="button" class="btn btn-success">Play</button>
@@ -34,6 +34,11 @@ fetch(url+artisti[index])
         `;
       contenuto.appendChild(card);
 
+  let artistName = card.querySelector('.artist-name');
+  artistName.onclick = () => {
+  // Assicurarsi che "canzone.artist.id" esista e contenga l'ID corretto
+  window.location = `../artist/artist.html?artistId=${canzone.artist.id}`;
+};
     });
   })
     
