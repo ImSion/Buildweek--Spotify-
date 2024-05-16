@@ -1,7 +1,7 @@
 const url = `https://striveschool-api.herokuapp.com/api/deezer/search?q=`
 const contenuto = document.getElementById("songCarousel")
 
-const artisti= ["eminem", "salmo", "metallica", "lazza", "oasis"]
+const artisti= ["eminem", "queen", "metallica", "lazza", "oasis", "Pink"]
 const index= Math.floor(Math.random() * (artisti.length - 0));
 
 fetch(url+artisti[index])
