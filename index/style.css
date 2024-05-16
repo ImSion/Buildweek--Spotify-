@@ -320,9 +320,42 @@
 
 
 
+/* CSS pagina Album */
+#album-main{
+    background: linear-gradient(to bottom, rgb(254,220 ,89) 20%, rgb(12, 12, 12) 70% );
+}
+.album-img1 {
+    width: 28px;
+    border-radius: 50%;
+}
+.album-texts{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+    color: rgb(255, 255, 255);
 
 
+}
+#album-title{
+   font-size: 70px;
+}
+#icone-brani{
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    gap: 15px;
+}
 
+#icone-brani .bi.bi-play-circle-fill{
+    color:rgb(0, 128, 0);
+    font-size: 60px;
+
+}
+.top-canzoni{
+    color: white;
+    border-bottom: 1px solid rgb(108, 117, 125); /* da verificare il colore del bordo*/
+}
 
 
 
@@ -346,3 +379,7 @@
         box-shadow: 0px 0px 10px rgb(30, 215, 96);
     }
 }
+
+
+
+
