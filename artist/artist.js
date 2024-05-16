@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
       let artist = document.querySelector(".artist");
       let bandName = document.querySelector(".band-name");
       let upperDiv = document.querySelector(".upper-div");
-     
-    
+      let titleSong=document.querySelector(".title-song");
+      titleSong.innerText=dati[0].title;
     
       let primeSetteCanzoni = dati.slice(0, 7);
 
@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function () {
         upperDiv.style.backgroundSize = "contain";
         upperDiv.style.backgroundRepeat = "repeat";
         upperDiv.style.backgroundPosition = "center";
+
+     
 
         
       });

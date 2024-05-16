@@ -332,7 +332,7 @@ a.nav-link.text-white.p-0:hover {
 
     .liked-songs {
         position:relative;
-        bottom:780px;
+        bottom:835px;
         left:-50px;
        
     }
@@ -448,6 +448,7 @@ a.nav-link.text-white.p-0:hover {
     
     .vertical-dots {
         display: inline;
+        margin-left:30px;
     }
 
     
@@ -456,7 +457,7 @@ a.nav-link.text-white.p-0:hover {
     }
 
     .song {
-        width:200px;
+        width:250px !important;
         text-align: center;
         font-size:18px;
     }
@@ -469,7 +470,7 @@ a.nav-link.text-white.p-0:hover {
 
     .liked-songs {
         position: relative;
-        bottom:1150px;
+        bottom:1170px;
         left:-45px;
     }
 
@@ -572,7 +573,7 @@ a.nav-link.text-white.p-0:hover {
 
     .liked-songs {
         position:relative;
-        bottom:1200px;
+        bottom:1220px;
         left:-50px;
        
     }
@@ -592,7 +593,7 @@ a.nav-link.text-white.p-0:hover {
     }
 
     .song {
-        width:350px;
+        width:350px !important;
         text-align: center;
         font-size:18px;
     }
@@ -701,8 +702,8 @@ a.nav-link.text-white.p-0:hover {
 
     .liked-songs {
         position:relative;
-        bottom:1220px;
-        left:-50px;
+        bottom:1210px;
+        right:50px;
        
     }
 
@@ -715,7 +716,7 @@ a.nav-link.text-white.p-0:hover {
     }
 
     .song {
-        width:400px;
+        width:400px !important;
         text-align: center;
         font-size:18px;
     }
