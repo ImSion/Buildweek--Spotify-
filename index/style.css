@@ -308,8 +308,38 @@
 
 
 
-.container-fluid {
+
+
+/*Inizio stile navbar bottom*/
+
+.navbar.navbar-lg.bg-dark{
+    width: 100vw;
+    z-index: 2000;
+    position: fixed;
+    bottom: 0;
     color: white;
+}
+.reproduction {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.bi.bi-play-circle-fill {
+    font-size: 30px;
+}
+
+.home-bottom a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #minuts-div {
@@ -327,6 +357,14 @@
     margin: 5px;
 }
 
+
+.artist-name {
+    cursor: pointer;
+}
+
+.artist-name {
+    cursor: pointer;
+}
 
 
 

@@ -15,7 +15,7 @@
 
     <main class="d-flex justify-content-between">
         <!-- sidebar sinistra (MainSBR) -->
-      <div id="leftsidebar" class="d-flex flex-column flex-shrink-0 p-3">
+      <div id="leftsidebar" class="d-none d-md-flex flex-column flex-shrink-0 p-3">
         
         <i class="bi bi-three-dots"></i>
         <ul class="nav nav-pills flex-column justify-content-center first-ul-sbr">
@@ -300,12 +300,31 @@
     <nav class="navbar navbar-lg bg-dark" aria-label="Thirteenth navbar example">
       <!--Parte visualizzata in mobile-->
       <div class="container-fluid">
-        <p class="ms-5 d-md-none">song name</p>
-        <div class="d-md-none">
-          <i class="bi bi-speaker d-md-none"></i>
-          <i class="bi bi-heart"></i>
-          <i class="bi bi-play-fill d-md-none"></i>
+        <div class="container-fluid reproduction">
+          <p class="ms-5 d-md-none">song name</p>
+          <div class="d-md-none d-flex justify-content-end gap-3 me-2">
+            <i class="bi bi-speaker d-md-none"></i>
+            <i class="bi bi-heart"></i>
+            <i class="bi bi-play-fill d-md-none"></i>
+          </div>
         </div>
+        <div class="home-bottom d-md-none">
+          <a href="#" class="nav-link text-secondary " aria-current="page">
+            <i class="bi bi-house-door"></i> 
+            <p>Home</p>
+          </a>
+          <a href="#" class="nav-link text-secondary">
+            <i class="bi bi-search"></i> 
+            <p>Cerca</p>
+          </a>
+          <a href="#" class="nav-link text-secondary">
+            <i class="bi bi-distribute-horizontal"></i> 
+            <p>La tua libreria</p>
+          </a>
+        </div>
+      </div>
+        
+
         <!--Parte sinistra-->
         <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11">
           <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
@@ -313,7 +332,7 @@
           <!--Parte centrale-->
           <ul class="navbar-nav col-lg-6 justify-content-lg-center">
             <li class="nav-item justify-content-lg-center">
-              <div class="d-flex justify-content-lg-center gap-2 ">
+              <div class="d-flex justify-content-lg-center align-items-center  gap-2 ">
                 <i class="bi bi-shuffle"></i>
                 <i class="bi bi-skip-start-fill"></i>
                 <i class="bi bi-play-circle-fill"></i>
@@ -340,6 +359,8 @@
         </div>
       </div>
     </nav>
+
+   
 
     
     
