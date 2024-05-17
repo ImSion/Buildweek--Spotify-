@@ -25,7 +25,7 @@
             </a>
           </li>
           <li>
-            <a href="/Search/search.html" class="nav-link text-secondary">
+            <a href="#" class="nav-link text-secondary">
                 <i class="bi bi-search"></i>Cerca
             </a>
           </li>
@@ -64,15 +64,23 @@
 
         <!-- sezione utility main content (nav-buttons e user account ) -->
         <div class="utility-sect d-flex justify-content-between">
-           <p class="d-inline-flex gap-1">
-             <button id="carouselToggle" class="btn showcarousel-btn position-absolute " type="button" data-bs-toggle="collapse" data-bs-target="#carouselcollapse" aria-expanded="false" aria-controls="carouselcollapse">
-               NASCONDI ANNUNCI
-             </button>
-           </p>
+           
            <div class="utility-btns">
+
              <button class="btn nav-btns"> <i class="bi bi-chevron-left"></i> </button>
              <button class="btn nav-btns"> <i class="bi bi-chevron-right"></i> </button>
+
+             <div class="search-div">                
+                <button class="search-btn">
+                    <i class="bi bi-search"></i>
+                </button>
+                <input class="search-input" type="search" placeholder="Cosa vuoi ascoltare?">
+             </div>
+
            </div>
+
+           
+           
 
            <div class="myaccount">
             <div id="accountsect" class="nav-item dropdown">
@@ -95,154 +103,188 @@
            </div>
 
         </div>  
+
+        <!-- sezione elementi centrali statici/dinamici -->
         
+        <div class="searchresults">
 
-        <!--carosello-->
-        <div id="artist-content" class="d-none d-lg-flex position-relative ">
-          
-          <div class="collapse" id="carouselcollapse">
-            <div id="songCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
+         <div class="firstsearched d-flex gap-2 ">
 
-              </div>
-             </div>
-          </div>
-        </div>
-        
-        <div class="playlists-section mt-4">
-          <h3 class="mb-4 fw-bold ">Buonasera</h3>
-          <div class="playlists d-flex justify-content-between gap-3 flex-wrap ">
-           
-            <div class="playlist d-flex align-items-center justify-content-between ">
-              <img class="playlst-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="plist-text">early stage emily syndrome (sett-ott 2022)</p>
-            </div>
-
-            <div class="playlist d-flex align-items-center justify-content-between ">
-              <img class="playlst-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="plist-text">Be The Young</p>
-            </div>
-
-            <div class="playlist d-flex align-items-center justify-content-between ">
-              <img class="playlst-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="plist-text">Saggio Vibes</p>
-            </div>
-
-            <div class="playlist d-flex align-items-center justify-content-between ">
-              <img class="playlst-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="plist-text">Brani che ti piacciono</p>
-            </div>
-
-            <div class="playlist d-flex align-items-center justify-content-between ">
-              <img class="playlst-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="plist-text">2021 lol</p>
-            </div>
-
-            <div class="playlist d-flex align-items-center justify-content-between ">
-              <img class="playlst-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="plist-text">Deep Dive with Ali Abdaal</p>
-            </div>
-
-          </div>
-
-          <h3 class="mb-4 fw-bold mt-5 ">Altro di ciò che ti piace</h3>
-          <div class="more-contents d-flex justify-content-between flex-wrap ">
-           
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
-            </div>
-
-            <div class="more-content d-flex flex-column mb-4">
-              <img class="more-content-img" src="https://picsum.photos/seed/picsum/200/300" alt="">
-              <p class="mt-3 mb-0 fw-bold fs-5 ">Hot Hits Italia</p>
-              <p class="morecnt-text">La playlist più calda del momento</p>
+            <div class="mostrelevant">
+              <h3>Risultato più rilevante</h3>
+              <div id="most-relevant"></div> 
             </div>
             
+            <div class="searched-tracks">
+                <h3>brani</h3>
+                <div id="searched-tracks" class="d-flex "></div> 
+            </div>
+            
+         </div> 
 
-          </div>
-          
+         <div class="searched-artists">
+            <h3>Artisti</h3>
+            <div id="searched-artists" class="d-flex "></div>
+         </div> 
+
+         <div class="searched-albums">
+            <h3>Album</h3>
+            <div id="searched-albums"></div>
+         </div> 
+
+        </div>
+        
+
+        <h3 class="othertitle mb-4 ">Sfoglia tutto</h3>
+        <div class="othercontents gap-4 d-flex flex-wrap justify-content-between">
+            
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+            
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            <div class="othercnt">
+                <h3>Podcast</h3>
+            </div>
+
+            
         </div>
 
+        
+        
+
+        
 
       </div>
 
@@ -297,12 +339,11 @@
     </main>
        
     <!--Bottom Nav Player-->
-    <nav class="navbar navbar-lg bg-dark" aria-label="Thirteenth navbar example" id="play-nav">
-
+    <nav class="navbar navbar-lg bg-dark" aria-label="Thirteenth navbar example">
       <!--Parte visualizzata in mobile-->
       <div class="container-fluid">
         <div class="container-fluid reproduction">
-          <p class="ms-5 d-md-none" id="song-artist"></p>
+          <p class="ms-5 d-md-none">song name</p>
           <div class="d-md-none d-flex justify-content-end gap-3 me-2">
             <i class="bi bi-speaker d-md-none"></i>
             <i class="bi bi-heart"></i>
@@ -328,7 +369,7 @@
 
         <!--Parte sinistra-->
         <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11">
-          <p class="navbar-brand col-lg-3 me-0" id="song-play"></p>
+          <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
 
           <!--Parte centrale-->
           <ul class="navbar-nav col-lg-6 justify-content-lg-center">
@@ -374,6 +415,6 @@
     <!-- script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- script -->
-    <script src="script.js"></script>
+    <script src="search.js"></script>
 </body>
 </html>
