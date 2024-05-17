@@ -297,11 +297,12 @@
     </main>
        
     <!--Bottom Nav Player-->
-    <nav class="navbar navbar-lg bg-dark" aria-label="Thirteenth navbar example">
+    <nav class="navbar navbar-lg bg-dark" aria-label="Thirteenth navbar example" id="play-nav">
+
       <!--Parte visualizzata in mobile-->
       <div class="container-fluid">
         <div class="container-fluid reproduction">
-          <p class="ms-5 d-md-none">song name</p>
+          <p class="ms-5 d-md-none" id="song-artist"></p>
           <div class="d-md-none d-flex justify-content-end gap-3 me-2">
             <i class="bi bi-speaker d-md-none"></i>
             <i class="bi bi-heart"></i>
@@ -327,7 +328,7 @@
 
         <!--Parte sinistra-->
         <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11">
-          <a class="navbar-brand col-lg-3 me-0" href="#">Centered nav</a>
+          <p class="navbar-brand col-lg-3 me-0" id="song-play"></p>
 
           <!--Parte centrale-->
           <ul class="navbar-nav col-lg-6 justify-content-lg-center">

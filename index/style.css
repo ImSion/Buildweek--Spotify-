@@ -309,12 +309,18 @@ html,body {
 /*Inizio stile navbar bottom*/
 
 .navbar.navbar-lg.bg-dark{
+    display: none;
     width: 100vw;
     z-index: 2000;
     position: fixed;
     bottom: 0;
     color: white;
 }
+
+.navbar.navbar-lg.bg-dark.nav-visible {
+    display: block;
+}
+
 .reproduction {
     color: white;
     display: flex;
@@ -339,9 +345,9 @@ html,body {
 }
 
 #minuts-div {
-    width: 500px;
-    background-color: rgb(108, 117, 125);
-    height: 3px;
+    width:600px;
+    height:5px;
+    background-color:#5E5E5E ;
     margin: 5px;
 }
 

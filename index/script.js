@@ -25,7 +25,7 @@ fetch(url+artisti[index])
           <p class="mb-4 artist-name" >${canzone.artist.name}</p>
           <p class="mb-4">Ascolta il nuovo singolo di ${canzone.artist.name}</p>
           <div>
-            <button type="button" class="btn btn-success">Play</button>
+            <button type="button" class="btn btn-success" onclick="visible('${canzone.album.cover}', '${canzone.title}','${canzone.artist.name}')">Play</button>
             <button type="button" class="btn btn-dark">Salva</button>
             <i class="bi bi-three-dots"></i>
           </div>
@@ -97,3 +97,13 @@ btn.addEventListener('mouseleave', function() {
   // Rimuovo immediatamente l'icona quando il mouse lascia il bottone
   btn.querySelector('.bi').style.display = 'none';
 });
+
+
+
+function visible (img, titleSong, nameArtist) {
+  const playNav= document.getElementById("play-nav");
+  playNav.classList.add("nav-visible")
+
+  const songArtist= document.getElementById("song-artist");
+  songArtist.textContent= `${titleSong} by ${nameArtist}`;
+}
