@@ -334,8 +334,16 @@ html,body {
     gap: 50px;
 }
 
+.home-bottom a i {
+    margin-left: 15px;
+}
+
 .bi.bi-play-circle-fill {
     font-size: 30px;
+}
+
+.bi.bi-shuffle, .bi.bi-repeat {
+    color:green;
 }
 
 .home-bottom a {
@@ -360,6 +368,10 @@ html,body {
 }
 .artist-name {
     cursor: pointer;
+}
+
+.bi-heart {
+    color: white;
 }
 
 

@@ -106,4 +106,17 @@ function visible (img, titleSong, nameArtist) {
 
   const songArtist= document.getElementById("song-artist");
   songArtist.textContent= `${titleSong} by ${nameArtist}`;
+  const songPlay= document.getElementById("song-play");
+  songPlay.innerHTML= `
+    <div class="d-flex gap-3 align-items-center w-25">
+      <div>
+        <img src="${img}" alt="cover ${titleSong}" width="50" class="album-cover"></div>
+        <div style ="max-width:180px">
+            <h6 class="text-white song-title fs-6">${titleSong}</h6>
+            <h6 class="text-secondary artist-name">${nameArtist}</h6>
+        </div>
+      <div>
+      <i class="bi bi-heart ms-4 fs-5"></i></div>
+    </div>
+            `;
 }
