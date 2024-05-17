@@ -476,3 +476,33 @@ html,body {
     }
 }
 
+/*BARRA DI RICERCA*/
+
+@media screen and (max-width: 992px) {
+    #barra {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100vw;
+        z-index: 9999; /* Assicura che la barra sia sopra altri elementi */
+        background-color: #272727de; /* Colore di sfondo per assicurare visibilità */
+        padding: 10px; /* Padding per un po' di spazio interno */
+      }
+
+      .elemento-1, .elemento-2, .elemento-3{
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    .elemento-1 i, .elemento-2 i, .elemento-3 i{
+        margin-left: 20px;
+    }
+    .libreria{
+        width:140px;
+    }
+      
+}
+
