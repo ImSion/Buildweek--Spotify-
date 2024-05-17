@@ -55,8 +55,11 @@ function updateSearchedArtists(items) {
             addedArtists.add(artistId);  // Aggiunge l'ID dell'artista al set
 
             let div = document.createElement('div');
-            div.classList.add('artist-info');
-            div.innerHTML = `<img src="${item.artist.picture}" alt="${item.artist.name}" style="width: 100px; height: 100px;"><p>${item.artist.name}</p>`;
+            div.classList.add('artist-info', 'm-2');
+            div.innerHTML = `
+                <img src="${item.artist.picture}" alt="${item.artist.name}" style="width: 150px; height: 150px; border-radius: 50%;">
+                <p>${item.artist.name}</p>
+                `;
             searchedArtists.appendChild(div);
         }
     });
@@ -72,8 +75,8 @@ function updateSearchedAlbums(items) {
             addedAlbums.add(albumId);  // Aggiunge l'ID dell'album al set
 
             let div = document.createElement('div');
-            div.classList.add('album-info');
-            div.innerHTML = `<img src="${item.album.cover}" alt="${item.album.title}" style="width: 100px; height: 100px;"><p>${item.album.title}</p>`;
+            div.classList.add('album-info', 'm-2');
+            div.innerHTML = `<img src="${item.album.cover}" alt="${item.album.title}" style="width: 150px; height: 150px;"><p>${item.album.title}</p>`;
             searchedAlbums.appendChild(div);
         }
     });
