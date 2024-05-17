@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if ((sideBarDestra.style.display === "none") && sideBarDestra.style.width==="0px") {
           openDiv.style.height = "100vh";
           openDiv.style.width = "100px";
+          openDiv.style.textAlign="center";
           openDiv.style.display = "flex";
           openButton.style.display = "inline";
       }

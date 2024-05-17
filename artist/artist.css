@@ -38,8 +38,10 @@ body {
 
 #open-sidebar {
     width:100px;
-   display:none;
+   display:flex;
+   justify-content: center;
 }
+
 
 #open-sidebar button {
     position:absolute;
@@ -347,9 +349,8 @@ a.nav-link.text-white.p-0:hover {
 
     .popolari {
         position: relative;
-        top:80px;
+        top:50px;
         left:-10px;
-        margin-top:60px;
         margin-bottom:70px;
     }
 
@@ -370,9 +371,7 @@ a.nav-link.text-white.p-0:hover {
     }
 
     .liked-songs {
-        position:relative;
-        bottom:835px !important;
-        left:-50px;
+        display: none;
        
     }
 
@@ -421,6 +420,10 @@ a.nav-link.text-white.p-0:hover {
     .xs-yes {
         margin-top:100px !important;
         visibility: visible;
+    }
+
+    #open-sidebar {
+        display:none;
     }
   
 }
@@ -551,6 +554,10 @@ a.nav-link.text-white.p-0:hover {
         visibility: visible;
     }
   
+    #open-sidebar {
+        display:none;
+    }
+  
 }
  
 
@@ -679,6 +686,11 @@ a.nav-link.text-white.p-0:hover {
         margin-top:100px !important;
         visibility: visible;
     }
+
+    #open-sidebar {
+        display:none;
+    }
+  
   
 }
 
@@ -807,6 +819,13 @@ a.nav-link.text-white.p-0:hover {
         margin-top:100px !important;
         visibility: visible;
     }
+    
+    #open-sidebar {
+        display:none;
+    }
+  
+
+
 }
 
 
