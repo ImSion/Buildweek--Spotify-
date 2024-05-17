@@ -4,6 +4,13 @@ body {
     box-sizing: border-box;
     height:100vh;
     overflow-x: hidden;
+    width:100vw;
+
+}
+
+.top.container-fluid {
+  background-color: #1F1F1F;  
+  width:100vw;
 }
 
 .container-fluid, .top.container-fluid {
@@ -23,8 +30,25 @@ body {
 .central-div {
     background-color:#1F1F1F;
     overflow-y: scroll;
+    flex-grow: 1;
+    transition: width 0.3s;
 
 
+}
+
+#open-sidebar {
+    width:100px;
+   display:none;
+}
+
+#open-sidebar button {
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+#open-sidebar i:hover {
+cursor: pointer;
 }
 
 .xs-yes {
@@ -33,6 +57,21 @@ body {
 }
 
 
+#close-button {
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#sb-right {
+    display:none;
+}
+
+#open-sidebar {
+    display:inline;
+}
 
 /*Personalizzo la scrollbar del div .central-div*/
 .central-div::-webkit-scrollbar {
@@ -332,7 +371,7 @@ a.nav-link.text-white.p-0:hover {
 
     .liked-songs {
         position:relative;
-        bottom:835px;
+        bottom:835px !important;
         left:-50px;
        
     }

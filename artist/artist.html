@@ -311,7 +311,7 @@
                       </div>
                       <div class="me-1 song ">Ocean Avenue</div>
                     </div>
-                    <div class="mt-4 users">276.616..912</div>
+                    <div class="mt-4 users">276.616.912</div>
                     <div class="mt-4 duration">3:18</div>
                     <div class="vertical-dots mt-4"><i class="bi bi-three-dots-vertical fs-3"></i></div>
                   </div>
@@ -330,7 +330,7 @@
                       </div>
                       <div class="me-1 song ">Ocean Avenue</div>
                     </div>
-                    <div class="mt-4 users">276.616..912</div>
+                    <div class="mt-4 users">276.616.912</div>
                     <div class="mt-4 duration">3:18</div>
                     <div class="vertical-dots mt-4"><i class="bi bi-three-dots-vertical fs-3"></i></div>
                   </div>
@@ -356,20 +356,21 @@
             </div>
           </div>
         </div>
-        <!--Sidebar di sinistra che quando premi il pulsante x scompare -->
+        
+        <!--Sidebar di destra che quando premi il pulsante x scompare -->
+        <div id="open-sidebar" ><button type="button" class="btn" id="open-button" onclick="openSideBar()"><i class="bi bi-person-fill-add text-white fs-3 mt-2"></i></button></div>
 
         <div
-          class="d-flex flex-column flex-shrink-0 p-3"
           style="width: 320px"
           id="sb-right"
         >
           <a
-            href="/"
+            href="#"
             class="d-flex align-items-center justify-content-between gap-5 mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
           >
             <span class="fs-6 ms-3">Attività amici</span>
             <span><i class="bi bi-person-fill-add text-white ms-4"></i></span>
-            <span><i class="bi bi-x-lg text-white ms-4"></i></span>
+            <span ><i class="bi bi-x-lg text-white ms-4"  id="close-button" onclick="closeSideBar()"   ></i></span>
           </a>
           <hr />
           <ul class="nav nav-pills flex-column mb-auto">
