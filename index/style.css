@@ -55,7 +55,6 @@ html,body {
 .utility-btns {
     display: flex;
     align-items: center;
-    position: absolute;
     left: 18px;
     top: 17px;
 
@@ -303,6 +302,59 @@ html,body {
 
 .container-fluid {
     color: white;
+}
+
+/* stile pagina search */
+
+.search-div {
+    background-color: rgb(70, 70, 70);
+    margin-left: 20px;
+    border-radius: 30px;
+    width: 400px;
+    display: flex;
+    height: 50px;
+}
+.search-btn {
+    border-radius: 20px;
+    color: white;
+    border: 0;
+    background-color: rgb(70, 70, 70);
+    margin-left: 10px;
+}
+.search-btn .bi {
+    font-size: 16px;
+}
+
+.search-input {
+    background-color: rgb(70, 70, 70);
+    border: 0;
+}
+
+.search-input::placeholder {
+    color: rgb(120, 120, 120);
+    font-weight: 600;
+}
+
+.othertitle {
+    margin-left: 30px;
+}
+
+.othercontents {
+    margin-left: 30px;
+    width: 95%;
+}
+
+.othercnt {
+    width: 170px;
+    height: 170px;
+    border-radius: 8px;
+    padding: 10px;
+    background-image: url(https://picsum.photos/id/237/300/300) ;
+}
+
+.searchresults {
+    margin-left: 30px;
+    width: 95%;
 }
 
 
