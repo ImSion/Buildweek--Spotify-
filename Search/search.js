@@ -3,7 +3,8 @@ const mostRelevant = document.getElementById(`most-relevant`);
 const searchedTracks = document.getElementById(`searched-tracks`);
 const searchedArtists = document.getElementById(`searched-artists`);
 const searchedAlbums = document.getElementById(`searched-albums`);
-const podcastContainer = document.querySelector(".othercontents")
+const podcastContainer = document.querySelector(".othercontents");
+const searchResults = document.querySelector(".searchresults");  // Seleziona il div che contiene i risultati della ricerca
 const artisti = ["eminem", "queen", "metallica", "lazza", "oasis", "Pink"];
 const index = Math.floor(Math.random() * artisti.length);
 
@@ -20,18 +21,20 @@ fetch(url + artisti[index])
             updateSearchedArtists(filteredSongs);
             updateSearchedAlbums(filteredSongs);
 
-            // nascondo i podcast non appena scrivo nell'input ricerca
+            // Nascondi o mostra i contenitori dei podcast e dei risultati di ricerca
             if (this.value.length > 0) {
                 podcastContainer.classList.add("d-none");
+                searchResults.style.display = 'block';  // Mostra i risultati di ricerca
             } else {
                 podcastContainer.classList.remove("d-none");
+                searchResults.style.display = 'none';  // Nascondi i risultati di ricerca
             }
         });
     })
     .catch(error => console.error('Errore nella fetch:', error));
 
 function updateMostRelevant(items) {
-    mostRelevant.innerHTML = '';  // Pulisce il container prima di aggiungere nuovi elementi
+    mostRelevant.innerHTML = '';  
     if (items.length > 0) {
         const item = items[0];
         mostRelevant.appendChild(createCard(item));
@@ -46,14 +49,12 @@ function updateSearchedTracks(items) {
 }
 
 function updateSearchedArtists(items) {
-    searchedArtists.innerHTML = '';  // Pulisce il container prima di aggiungere nuovi elementi
-    const addedArtists = new Set();  // Crea un set per tenere traccia degli ID degli artisti aggiunti
-
+    searchedArtists.innerHTML = '';
+    const addedArtists = new Set();  
     items.forEach(item => {
         const artistId = item.artist.id;
-        if (!addedArtists.has(artistId)) {  // Controlla se l'ID dell'artista è già stato aggiunto
-            addedArtists.add(artistId);  // Aggiunge l'ID dell'artista al set
-
+        if (!addedArtists.has(artistId)) {
+            addedArtists.add(artistId);
             let div = document.createElement('div');
             div.classList.add('artist-info', 'm-2');
             div.innerHTML = `
@@ -66,14 +67,12 @@ function updateSearchedArtists(items) {
 }
 
 function updateSearchedAlbums(items) {
-    searchedAlbums.innerHTML = '';  // Pulisce il container prima di aggiungere nuovi elementi
+    searchedAlbums.innerHTML = '';
     const addedAlbums = new Set();  
-
     items.forEach(item => {
         const albumId = item.album.id;
-        if (!addedAlbums.has(albumId)) {  // Controlla se l'ID dell'album è già stato aggiunto
-            addedAlbums.add(albumId);  // Aggiunge l'ID dell'album al set
-
+        if (!addedAlbums.has(albumId)) {
+            addedAlbums.add(albumId);
             let div = document.createElement('div');
             div.classList.add('album-info', 'm-2');
             div.innerHTML = `<img src="${item.album.cover}" alt="${item.album.title}" style="width: 150px; height: 150px;"><p>${item.album.title}</p>`;
@@ -81,7 +80,6 @@ function updateSearchedAlbums(items) {
         }
     });
 }
-
 
 function createCard(item) {
     let card = document.createElement("div");
